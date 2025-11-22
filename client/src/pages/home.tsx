@@ -40,7 +40,7 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertContactLeadSchema } from "@shared/schema";
 
-import heroImage from "@assets/generated_images/Hero_background_entrepreneur_laptop_f8611c28.png";
+import heroImage from "@assets/image (1) (1)_1763854611643.jpg";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
