@@ -22,6 +22,7 @@ import {
   Mail,
   Phone,
   Loader2,
+  Store,
 } from "lucide-react";
 import { SiShopee, SiAmazon, SiTiktok } from "react-icons/si";
 import { Button } from "@/components/ui/button";
@@ -163,7 +164,7 @@ export default function Home() {
     },
     { 
       name: "Mercado Livre", 
-      icon: SiMercadolibre, 
+      icon: Store, 
       color: "#FFE600",
       description: "Técnicas comprovadas para se destacar no maior marketplace da América Latina"
     },
