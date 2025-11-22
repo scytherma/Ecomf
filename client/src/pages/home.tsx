@@ -356,14 +356,16 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button 
-                size="lg"
-                className="px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
-                data-testid="button-cta-hero"
-              >
-                <Sparkles className="mr-2 h-5 w-5" />
-                Garantir Minha Vaga Agora
-              </Button>
+              <a href="https://pay.cakto.com.br/trrf6yf">
+                <Button 
+                  size="lg"
+                  className="px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
+                  data-testid="button-cta-hero"
+                >
+                  <Sparkles className="mr-2 h-5 w-5" />
+                  Garantir Minha Vaga Agora
+                </Button>
+              </a>
               
               <Button 
                 size="lg"
@@ -881,14 +883,16 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-4">
-                  <Button 
-                    size="lg"
-                    className="w-full py-8 text-xl font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
-                    data-testid="button-cta-pricing"
-                  >
-                    <Sparkles className="mr-2 h-6 w-6" />
-                    Garantir Minha Vaga Agora
-                  </Button>
+                  <a href="https://pay.cakto.com.br/trrf6yf" className="block">
+                    <Button 
+                      size="lg"
+                      className="w-full py-8 text-xl font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
+                      data-testid="button-cta-pricing"
+                    >
+                      <Sparkles className="mr-2 h-6 w-6" />
+                      Garantir Minha Vaga Agora
+                    </Button>
+                  </a>
                   
                   <Button 
                     size="lg"
