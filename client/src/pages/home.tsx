@@ -46,6 +46,7 @@ import mentorOliveira from "@assets/generated_images/Mentor_Oliveira_professiona
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
+import mercadoLivreLogo from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763846344500.png";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -164,7 +165,7 @@ export default function Home() {
     },
     { 
       name: "Mercado Livre", 
-      icon: Store, 
+      image: mercadoLivreLogo,
       color: "#FFE600",
       description: "Técnicas comprovadas para se destacar no maior marketplace da América Latina"
     },
@@ -411,7 +412,13 @@ export default function Home() {
                 >
                   <CardContent className="p-8 text-center">
                     <div className="mb-4 flex justify-center">
-                      {platform.icon ? (
+                      {platform.image ? (
+                        <img 
+                          src={platform.image}
+                          alt={`Logo do ${platform.name}`}
+                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0 object-contain"
+                        />
+                      ) : platform.icon ? (
                         <platform.icon 
                           className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0"
                           style={{ color: platform.color }}
