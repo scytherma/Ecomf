@@ -551,11 +551,11 @@ export default function Home() {
                   data-testid={`card-mentor-${index}`}
                 >
                   <CardContent className="p-0">
-                    <div className="relative overflow-hidden bg-gray-800">
+                    <div className="relative overflow-hidden">
                       <img 
                         src={mentor.image} 
                         alt={`Foto profissional do mentor ${mentor.name}, ${mentor.title}`}
-                        className="w-full h-96 object-contain group-hover:brightness-110 transition-all duration-300"
+                        className="w-full h-96 object-cover group-hover:brightness-110 transition-all duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/40 to-transparent" aria-hidden="true" />
                       
