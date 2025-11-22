@@ -41,7 +41,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { insertContactLeadSchema } from "@shared/schema";
 
 import heroImage from "@assets/generated_images/Hero_background_entrepreneur_laptop_f8611c28.png";
-import mentorDiogo from "@assets/generated_images/Mentor_Diogo_professional_headshot_dc18a89a.png";
+import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/generated_images/Mentor_Oliveira_professional_headshot_01fde1da.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
@@ -516,9 +516,9 @@ export default function Home() {
             {[
               { 
                 name: "Diogo Almeida", 
-                title: "Especialista em Shopee & Amazon",
-                experience: "8 anos",
-                sales: "R$ 30M+",
+                title: "Especialista em Shopee e Mercado Livre",
+                experience: "4 anos",
+                sales: "R$ 100k/Mês",
                 image: mentorDiogo
               },
               { 
