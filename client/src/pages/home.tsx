@@ -42,7 +42,7 @@ import { insertContactLeadSchema } from "@shared/schema";
 
 import heroImage from "@assets/generated_images/Hero_background_entrepreneur_laptop_f8611c28.png";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
-import mentorOliveira from "@assets/generated_images/Mentor_Oliveira_professional_headshot_01fde1da.png";
+import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
@@ -533,9 +533,9 @@ export default function Home() {
               },
               { 
                 name: "Oliveira", 
-                title: "Expert em Mercado Livre & TikTok Shop",
-                experience: "6 anos",
-                sales: "R$ 20M+",
+                title: "Especialista em TikTok Shop e Amazon",
+                experience: "5 anos",
+                sales: "R$ 600k/Mês",
                 image: mentorOliveira
               },
             ].map((mentor, index) => (
