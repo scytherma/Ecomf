@@ -163,7 +163,7 @@ export default function Home() {
     },
     { 
       name: "Mercado Livre", 
-      icon: null, 
+      icon: SiMercadolibre, 
       color: "#FFE600",
       description: "Técnicas comprovadas para se destacar no maior marketplace da América Latina"
     },
