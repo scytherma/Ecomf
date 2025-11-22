@@ -47,6 +47,7 @@ import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
 import mercadoLivreLogo from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763846344500.png";
+import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1763848977928.png";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -313,6 +314,15 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-transparent" />
+        </div>
+
+        {/* Logo Header */}
+        <div className="absolute top-8 left-8 z-20">
+          <img 
+            src={ecomfyLogo} 
+            alt="Logo EcomFy" 
+            className="h-12 w-auto"
+          />
         </div>
 
         {/* Floating Decorative Orbs */}
@@ -1069,9 +1079,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
-              <h3 className="font-heading text-2xl font-bold text-white mb-4">
-                EcomFy
-              </h3>
+              <div className="mb-4">
+                <img 
+                  src={ecomfyLogo} 
+                  alt="Logo EcomFy" 
+                  className="h-10 w-auto"
+                />
+              </div>
               <p className="text-gray-400 mb-6">
                 Transformando vidas através do e-commerce. Aprenda a vender nas maiores plataformas do Brasil.
               </p>
