@@ -327,22 +327,22 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       
       {/* Hero Section */}
-      <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'left center', backgroundRepeat: 'no-repeat'}}>
+      <section className="relative w-full h-[400px] sm:h-[550px] md:h-[650px] lg:h-[773px] flex items-end md:items-center justify-start md:justify-center overflow-hidden" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'left center', backgroundRepeat: 'no-repeat'}}>
 
-        <div className="absolute bottom-32 left-48 z-10">
+        <div className="relative md:absolute bottom-4 sm:bottom-8 md:bottom-32 left-4 sm:left-8 md:left-48 z-10 pb-4 sm:pb-0">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-row gap-4">
-              <a href="https://pay.cakto.com.br/trrf6yf">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+              <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
                   size="md"
-                  className="px-6 py-3 text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
+                  className="w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-5 w-5" />
+                  <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Entrar para EcomFy agora
                 </Button>
               </a>
@@ -350,10 +350,10 @@ export default function Home() {
               <Button 
                 size="md"
                 variant="outline"
-                className="px-6 py-3 text-base font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
+                className="w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
+                <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Tirar duvidas no whatsApp
               </Button>
             </div>
