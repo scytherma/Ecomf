@@ -734,17 +734,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-16"
+            className="text-center mb-16 pt-8"
           >
             <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
               <Gift className="w-4 h-4 mr-2" />
               Bônus Exclusivos
             </Badge>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Ganhe R$ 1.891 em Bônus
+              Receba Bônus Exclusivos
             </h2>
             <p className="text-xl text-gray-400">
-              Ao garantir sua vaga hoje, você leva gratuitamente
+              Ao entrar para EcomFy hoje, você levará gratuitamente benefícios Exclusivos
             </p>
           </motion.div>
 
