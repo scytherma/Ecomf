@@ -27,6 +27,10 @@ import {
   Megaphone,
   Rocket,
   Globe,
+  Infinity,
+  Headphones,
+  MessageSquare,
+  FileText,
 } from "lucide-react";
 import { SiShopee, SiAmazon, SiTiktok } from "react-icons/si";
 import { Button } from "@/components/ui/button";
@@ -639,54 +643,95 @@ export default function Home() {
       </section>
 
       {/* What's Included */}
-      <section className="py-24 bg-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" aria-hidden="true">
-          <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full" />
-          <div className="absolute top-20 left-40 w-2 h-2 bg-white rounded-full" />
-          <div className="absolute top-40 right-20 w-2 h-2 bg-white rounded-full" />
-          <div className="absolute bottom-20 left-60 w-2 h-2 bg-white rounded-full" />
-        </div>
+      <section className="py-32 bg-gradient-to-b from-gray-900 via-purple-900/20 to-gray-900 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl" aria-hidden="true" />
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-white to-purple-300 bg-clip-text text-transparent mb-4">
               O Que Está Incluso
             </h2>
-            <p className="text-xl text-gray-400">
-              Tudo que você precisa para ter sucesso no e-commerce
+            <p className="text-xl text-gray-300">
+              Pacote Completo Para Seu Sucesso no E-Commerce
             </p>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
             viewport={{ once: true }}
-            className="space-y-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              "150+ aulas práticas em vídeo com alta qualidade",
-              "50+ módulos completos do básico ao avançado",
-              "Acesso vitalício à plataforma de membros",
-              "Atualizações gratuitas de conteúdo",
-              "Certificado de conclusão reconhecido",
-              "Suporte direto com os mentores",
-              "Grupo VIP exclusivo no WhatsApp",
-              "Templates e planilhas prontas para usar",
-            ].map((item, index) => (
+              { 
+                item: "150+ Aulas em Vídeo", 
+                description: "Alta qualidade e práticas",
+                icon: Play
+              },
+              { 
+                item: "50+ Módulos Completos", 
+                description: "Do básico ao avançado",
+                icon: BookOpen
+              },
+              { 
+                item: "Acesso Vitalício", 
+                description: "Atualizações gratuitas",
+                icon: Infinity
+              },
+              { 
+                item: "Certificado Reconhecido", 
+                description: "Validado profissionalmente",
+                icon: Award
+              },
+              { 
+                item: "Suporte Direto", 
+                description: "Com os mentores",
+                icon: Headphones
+              },
+              { 
+                item: "Grupo VIP WhatsApp", 
+                description: "Comunidade exclusiva",
+                icon: MessageSquare
+              },
+              { 
+                item: "Templates Prontos", 
+                description: "Para usar imediatamente",
+                icon: FileText
+              },
+              { 
+                item: "Recursos Extra", 
+                description: "Planilhas e ferramentas",
+                icon: Zap
+              },
+            ].map((feature, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="flex items-start gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+                variants={staggerItem}
                 data-testid={`included-item-${index}`}
               >
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <p className="text-gray-200 text-lg">{item}</p>
+                <Card className="group relative h-full bg-gradient-to-br from-white/10 to-purple-900/20 backdrop-blur-xl border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" aria-hidden="true" />
+                  
+                  <CardContent className="p-6 relative z-10 flex flex-col h-full">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      <feature.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-heading text-lg font-bold text-white mb-2">
+                      {feature.item}
+                    </h3>
+                    <p className="text-purple-200 text-sm flex-grow">
+                      {feature.description}
+                    </p>
+                    <div className="mt-4 pt-4 border-t border-purple-400/20 flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-purple-400" />
+                      <span className="text-xs text-purple-300 font-medium">Incluído</span>
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
