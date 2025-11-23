@@ -317,13 +317,13 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+        <div className="absolute bottom-16 left-8 z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <div className="flex flex-col gap-4">
               <a href="https://pay.cakto.com.br/trrf6yf">
                 <Button 
                   size="lg"
@@ -345,15 +345,6 @@ export default function Home() {
                 Falar no WhatsApp
               </Button>
             </div>
-
-            {/* Scroll Indicator */}
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="inline-block"
-            >
-              <ChevronDown className="w-8 h-8 text-white/60" />
-            </motion.div>
           </motion.div>
         </div>
       </section>
