@@ -232,7 +232,7 @@ export default function Home() {
       icon: Rocket, 
       title: "Escala & Automação", 
       lessons: 14,
-      description: "Leve seu negócio ao próximo nível"
+      description: "Escale exponencial + sistemas automáticos que trabalham 24/7"
     },
   ];
 
