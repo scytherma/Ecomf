@@ -196,34 +196,44 @@ export default function Home() {
 
   const modules = [
     { 
-      icon: Target, 
-      title: "Fundamentos do E-commerce", 
-      lessons: 15,
-      description: "Base sólida para começar seu negócio digital"
-    },
-    { 
-      icon: TrendingUp, 
-      title: "Pesquisa de Produtos", 
-      lessons: 12,
-      description: "Encontre produtos com alto potencial de venda"
-    },
-    { 
-      icon: Sparkles, 
-      title: "Criação de Anúncios", 
+      image: null,
+      isCustomIcon: true,
+      customText: "ML",
+      title: "Mercado Livre Pro", 
       lessons: 18,
-      description: "Anúncios que convertem e geram vendas"
+      description: "Estratégias avançadas para dominar o maior marketplace da América Latina"
     },
     { 
-      icon: Zap, 
-      title: "Tráfego Pago", 
+      image: null,
+      isCustomIcon: true,
+      customText: "SH",
+      title: "Shopee Expert", 
+      lessons: 16,
+      description: "Técnicas exclusivas para vender com sucesso na plataforma chinesa"
+    },
+    { 
+      image: null,
+      isCustomIcon: true,
+      customText: "TK",
+      title: "TikTok Shop Master", 
+      lessons: 15,
+      description: "Aproveite o crescimento viral do TikTok Shop"
+    },
+    { 
+      image: null,
+      isCustomIcon: true,
+      customText: "AM",
+      title: "Amazon Advanced", 
       lessons: 20,
-      description: "Domine ads nas principais plataformas"
+      description: "Escale seu negócio na maior plataforma de e-commerce do mundo"
     },
     { 
-      icon: Users, 
-      title: "Atendimento & Vendas", 
-      lessons: 10,
-      description: "Técnicas para aumentar conversão"
+      image: null,
+      isCustomIcon: true,
+      customText: "CT",
+      title: "Conteúdo e Tráfego Multicanal", 
+      lessons: 22,
+      description: "Estratégias de conteúdo e tráfego para vender em todas as plataformas"
     },
     { 
       icon: Award, 
@@ -624,7 +634,13 @@ export default function Home() {
                 >
                   <CardContent className="p-8">
                     <div className="mb-4">
-                      <module.icon className="w-12 h-12 text-primary group-hover:rotate-12 transition-transform duration-300" />
+                      {module.isCustomIcon ? (
+                        <div className="w-12 h-12 rounded-lg flex items-center justify-center text-sm font-bold bg-gradient-to-br from-purple-500 to-purple-600 text-white group-hover:scale-110 transition-transform duration-300">
+                          {module.customText}
+                        </div>
+                      ) : module.icon ? (
+                        <module.icon className="w-12 h-12 text-primary group-hover:rotate-12 transition-transform duration-300" />
+                      ) : null}
                     </div>
                     <h3 className="font-heading text-2xl font-bold text-white mb-2">
                       {module.title}
