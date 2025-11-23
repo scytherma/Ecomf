@@ -327,34 +327,36 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] sm:h-[550px] md:h-[650px] lg:h-[773px] flex items-end md:items-center justify-start md:justify-center overflow-hidden" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'left center', backgroundRepeat: 'no-repeat'}}>
+      <section className="relative w-full h-screen max-h-[773px] min-h-[500px] sm:min-h-[600px] flex items-center justify-center overflow-hidden" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed'}}>
+        
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="relative md:absolute bottom-4 sm:bottom-8 md:bottom-32 left-4 sm:left-8 md:left-48 z-10 pb-4 sm:pb-0">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-end pb-12 sm:pb-16 md:pb-32 h-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
-                  size="md"
-                  className="w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
+                  size="lg"
+                  className="w-full sm:w-auto px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-xl hover:shadow-purple-500/70 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <Sparkles className="mr-2 h-5 w-5" />
                   Entrar para EcomFy agora
                 </Button>
               </a>
               
               <Button 
-                size="md"
+                size="lg"
                 variant="outline"
-                className="w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
+                className="w-full sm:w-auto px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold bg-white/15 backdrop-blur-lg border-2 border-white/40 text-white hover:bg-white/25 hover:border-white/60"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Tirar duvidas no whatsApp
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Tirar dúvidas no WhatsApp
               </Button>
             </div>
           </motion.div>
