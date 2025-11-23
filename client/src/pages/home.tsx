@@ -476,7 +476,7 @@ export default function Home() {
                 Transforme-se em um especialista em e-commerce com nosso método passo a passo
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {objectives.map((objective, index) => (
                   <motion.div
                     key={index}
@@ -484,15 +484,21 @@ export default function Home() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-4 group"
+                    className="group"
                     data-testid={`objective-${index}`}
                   >
-                    <div className="flex-shrink-0">
-                      <CheckCircle2 className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white text-sm font-bold group-hover:scale-110 transition-transform">
+                            {index + 1}
+                          </div>
+                        </div>
+                        <p className="text-gray-200 text-base leading-relaxed">
+                          {objective}
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-gray-200 text-lg leading-relaxed">
-                      {objective}
-                    </p>
                   </motion.div>
                 ))}
               </div>
