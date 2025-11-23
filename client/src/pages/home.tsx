@@ -467,7 +467,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <motion.div {...fadeInUp}>
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
                 O Que Você Vai Aprender
