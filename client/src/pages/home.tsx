@@ -849,7 +849,7 @@ export default function Home() {
                   <img 
                     src={ecomfyLogo} 
                     alt="EcomFy Logo" 
-                    className="h-20 object-contain"
+                    className="h-14 object-contain"
                   />
                 </div>
 
@@ -868,26 +868,26 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <a href="https://pay.cakto.com.br/trrf6yf" className="block">
                     <Button 
                       size="lg"
-                      className="w-full py-8 text-xl font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
+                      className="w-full font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
                       data-testid="button-cta-pricing"
                     >
-                      <Sparkles className="mr-2 h-6 w-6" />
-                      Garantir Minha Vaga Agora
+                      <Sparkles className="mr-2 h-5 w-5" />
+                      Quero meu lugar na EcomFy
                     </Button>
                   </a>
                   
                   <Button 
                     size="lg"
                     variant="outline"
-                    className="w-full py-8 text-xl font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600"
+                    className="w-full font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600"
                     data-testid="button-whatsapp-pricing"
                   >
-                    <MessageCircle className="mr-2 h-6 w-6" />
-                    Falar com Consultor no WhatsApp
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Falar com Especialista EcomFy
                   </Button>
                 </div>
 
