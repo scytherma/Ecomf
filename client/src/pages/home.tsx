@@ -659,7 +659,7 @@ export default function Home() {
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
               { 
@@ -681,26 +681,6 @@ export default function Home() {
                 item: "Certificado Reconhecido", 
                 description: "Validado profissionalmente",
                 icon: Award
-              },
-              { 
-                item: "Suporte Direto", 
-                description: "Com os mentores",
-                icon: MessageCircle
-              },
-              { 
-                item: "Grupo VIP WhatsApp", 
-                description: "Comunidade exclusiva",
-                icon: Store
-              },
-              { 
-                item: "Templates Prontos", 
-                description: "Para usar imediatamente",
-                icon: Target
-              },
-              { 
-                item: "Recursos Extra", 
-                description: "Planilhas e ferramentas",
-                icon: Zap
               },
             ].map((feature, index) => (
               <motion.div
