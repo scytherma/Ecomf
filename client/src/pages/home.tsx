@@ -23,6 +23,7 @@ import {
   Phone,
   Loader2,
   Store,
+  Lock,
 } from "lucide-react";
 import { SiShopee, SiAmazon, SiTiktok } from "react-icons/si";
 import { Button } from "@/components/ui/button";
@@ -892,8 +893,9 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 text-center">
-                  <p className="text-gray-400 text-sm mb-4">
-                    🔒 Compra 100% Segura | 7 Dias de Garantia
+                  <p className="text-gray-400 text-sm mb-4 flex items-center justify-center gap-2">
+                    <Lock className="h-4 w-4 text-white" />
+                    Garantia EcomFy · 7 dias ou seu dinheiro de volta
                   </p>
                   <div className="flex justify-center items-center gap-4 text-gray-500 text-xs">
                     <span>Aceitamos:</span>
