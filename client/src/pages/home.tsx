@@ -48,6 +48,7 @@ import heroImage from "@assets/image (1) (1)_1763854611643.jpg";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
+import learningImage from "@assets/generated_images/e-commerce_learning_growth_illustration.png";
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
@@ -510,8 +511,8 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-transparent rounded-xl" aria-hidden="true" />
               <img 
-                src={dashboardImage} 
-                alt="Dashboard de vendas mostrando estatísticas e gráficos de e-commerce" 
+                src={learningImage} 
+                alt="Ilustração de aprendizado em e-commerce com crescimento e desenvolvimento profissional" 
                 className="rounded-xl shadow-2xl border border-white/10"
               />
             </motion.div>
