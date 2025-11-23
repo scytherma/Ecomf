@@ -333,7 +333,7 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center -translate-y-40">
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center -translate-y-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
