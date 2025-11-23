@@ -368,18 +368,19 @@ export default function Home() {
                 key={platform.name}
                 variants={staggerItem}
                 transition={{ delay: index * 0.1 }}
+                className="h-full"
               >
                 <Card 
-                  className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 border-t-4 border-t-transparent hover:border-t-purple-500"
+                  className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 border-t-4 border-t-transparent hover:border-t-purple-500 h-full flex flex-col"
                   data-testid={`card-platform-${platform.name.toLowerCase().replace(' ', '-')}`}
                 >
-                  <CardContent className="p-8 text-center">
+                  <CardContent className="p-8 text-center flex-1 flex flex-col justify-center">
                     <div className="mb-4 flex justify-center">
                       {platform.image ? (
                         <img 
                           src={platform.image}
                           alt={`Logo do ${platform.name}`}
-                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0 object-contain"
+                          className="w-16 h-16 transition-all duration-300 object-contain"
                         />
                       ) : platform.icon ? (
                         <platform.icon 
