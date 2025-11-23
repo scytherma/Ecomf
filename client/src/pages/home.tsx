@@ -842,33 +842,19 @@ export default function Home() {
           <motion.div
             {...fadeInUp}
           >
-            <Card className="bg-gradient-to-br from-white to-white backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
+            <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
               <CardContent className="p-12">
-                {/* Countdown Timer */}
-                <div className="mb-8">
-                  <p className="text-center text-gray-700 mb-4 text-lg">
-                    Esta oferta expira em:
-                  </p>
-                  <div className="flex justify-center gap-4" data-testid="countdown-timer">
-                    {[
-                      { label: "Horas", value: timeLeft.hours },
-                      { label: "Minutos", value: timeLeft.minutes },
-                      { label: "Segundos", value: timeLeft.seconds },
-                    ].map((item) => (
-                      <div key={item.label} className="text-center">
-                        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 min-w-[80px]">
-                          <span className="text-4xl font-bold text-black font-mono">
-                            {String(item.value).padStart(2, '0')}
-                          </span>
-                        </div>
-                        <p className="text-gray-600 text-sm mt-2">{item.label}</p>
-                      </div>
-                    ))}
-                  </div>
+                {/* EcomFy Logo */}
+                <div className="mb-8 flex justify-center">
+                  <img 
+                    src={ecomfyLogo} 
+                    alt="EcomFy Logo" 
+                    className="h-32 object-contain"
+                  />
                 </div>
 
                 <div className="text-center mb-8">
-                  <p className="text-gray-600 text-lg mb-2">De R$ 1.997,00 por apenas</p>
+                  <p className="text-gray-400 text-lg mb-2">De R$ 1.997,00 por apenas</p>
                   <div className="mb-4">
                     <span className="text-gray-500 line-through text-3xl">R$ 1.997,00</span>
                   </div>
@@ -877,8 +863,8 @@ export default function Home() {
                       R$ 397
                     </span>
                   </div>
-                  <p className="text-gray-700 text-xl">
-                    ou <strong className="text-black">12x de R$ 46,16</strong>
+                  <p className="text-gray-300 text-xl">
+                    ou <strong className="text-white">12x de R$ 46,16</strong>
                   </p>
                 </div>
 
