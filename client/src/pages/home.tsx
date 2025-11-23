@@ -371,13 +371,13 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-end pb-8 md:pb-16 lg:pb-32">
+        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-end pb-32 md:pb-40 lg:pb-48">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-fit">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
                   size="md"
