@@ -736,7 +736,7 @@ export default function Home() {
             {...fadeInUp}
             className="text-center mb-16 pt-20"
           >
-            <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
+            <Badge className="mb-8 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
               <Gift className="w-4 h-4 mr-2" />
               Bônus Exclusivos
             </Badge>
