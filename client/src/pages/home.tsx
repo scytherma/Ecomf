@@ -44,7 +44,7 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertContactLeadSchema } from "@shared/schema";
 
-import heroImage from "@assets/image (1) (1)_1763854611643.jpg";
+import heroBanner from "@assets/fundo banner site ecomfy_1763876167157.png";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
@@ -307,20 +307,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       
       {/* Hero Section */}
-      <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto">
-        {/* Animated Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-800 to-gray-900 animate-gradient-shift bg-[length:200%_200%]" />
-        
-        {/* Hero Image with Overlay */}
-        <div className="absolute inset-0 opacity-20" aria-hidden="true">
-          <img 
-            src={heroImage} 
-            alt="Empreendedor trabalhando em e-commerce com laptop" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-transparent" />
-        </div>
-
+      <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
         {/* Logo Header */}
         <div className="absolute top-8 left-8 z-20">
           <img 
@@ -329,10 +316,6 @@ export default function Home() {
             className="h-12 w-auto"
           />
         </div>
-
-        {/* Floating Decorative Orbs */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl animate-float" aria-hidden="true" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} aria-hidden="true" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
           <motion.div
