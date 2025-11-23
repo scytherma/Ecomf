@@ -323,26 +323,26 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-row gap-3">
               <a href="https://pay.cakto.com.br/trrf6yf">
                 <Button 
-                  size="lg"
-                  className="px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-5 w-5" />
-                  Garantir Minha Vaga Agora
+                  <Sparkles className="mr-2 h-4 w-4" />
+                  Garantir Vaga
                 </Button>
               </a>
               
               <Button 
-                size="lg"
+                size="sm"
                 variant="outline"
-                className="px-8 py-6 text-lg font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
+                className="px-4 py-2 text-sm font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Falar no WhatsApp
+                <MessageCircle className="mr-2 h-4 w-4" />
+                WhatsApp
               </Button>
             </div>
           </motion.div>
