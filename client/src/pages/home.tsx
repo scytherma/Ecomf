@@ -704,7 +704,7 @@ export default function Home() {
                 variants={staggerItem}
                 data-testid={`included-item-${index}`}
               >
-                <Card className="group relative h-full bg-gradient-to-br from-white/10 to-purple-900/20 backdrop-blur-xl border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40">
+                <Card className="group relative h-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-purple-500/50 transition-all duration-300 overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" aria-hidden="true" />
                   
                   <CardContent className="p-6 relative z-10 flex flex-col h-full">
