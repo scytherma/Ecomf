@@ -309,7 +309,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'left center', backgroundRepeat: 'no-repeat'}}>
 
-        <div className="absolute bottom-16 left-48 z-10">
+        <div className="absolute bottom-32 left-48 z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
