@@ -441,8 +441,8 @@ export default function Home() {
       </section>
 
       {/* Course Objectives */}
-      <section className="py-32 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
-        <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/40 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
+      <section className="py-32 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-visible">
+        <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
