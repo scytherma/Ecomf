@@ -404,7 +404,7 @@ export default function Home() {
       </section>
 
       {/* Platform Showcase */}
-      <section className="py-24 bg-[#292b2f]">
+      <section className="py-12 bg-[#292b2f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -482,7 +482,7 @@ export default function Home() {
       </section>
 
       {/* Course Objectives */}
-      <section className="py-32 bg-[#292b2f] relative overflow-visible">
+      <section className="py-16 bg-[#292b2f] relative overflow-visible">
         <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
