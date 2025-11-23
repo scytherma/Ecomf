@@ -530,17 +530,23 @@ export default function Home() {
             ].map((mentor, index) => (
               <motion.div
                 key={mentor.name}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
               >
                 <Card 
                   className="group bg-white/5 backdrop-blur-md border-white/10 hover:scale-102 transition-all duration-300 overflow-hidden"
                   data-testid={`card-mentor-${index}`}
                 >
                   <CardContent className="p-0">
-                    <div className="relative overflow-hidden">
+                    <motion.div 
+                      className="relative overflow-hidden"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.8, delay: index * 0.2 + 0.1 }}
+                    >
                       <img 
                         src={mentor.image} 
                         alt={`Foto profissional do mentor ${mentor.name}, ${mentor.title}`}
@@ -548,15 +554,39 @@ export default function Home() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/40 to-transparent" aria-hidden="true" />
                       
-                      <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="font-heading text-3xl font-bold text-white mb-2">
+                      <motion.div 
+                        className="absolute bottom-0 left-0 right-0 p-6"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
+                      >
+                        <motion.h3 
+                          className="font-heading text-3xl font-bold text-white mb-2"
+                          initial={{ opacity: 0, x: -20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true, margin: "-50px" }}
+                          transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
+                        >
                           {mentor.name}
-                        </h3>
-                        <p className="text-purple-300 text-lg mb-4">
+                        </motion.h3>
+                        <motion.p 
+                          className="text-purple-300 text-lg mb-4"
+                          initial={{ opacity: 0, x: -20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true, margin: "-50px" }}
+                          transition={{ duration: 0.5, delay: index * 0.2 + 0.5 }}
+                        >
                           {mentor.title}
-                        </p>
+                        </motion.p>
                         
-                        <div className="flex gap-6">
+                        <motion.div 
+                          className="flex gap-6"
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          viewport={{ once: true, margin: "-50px" }}
+                          transition={{ duration: 0.5, delay: index * 0.2 + 0.6 }}
+                        >
                           <div>
                             <p className="text-gray-300 text-sm">Experiência</p>
                             <p className="text-white text-xl font-bold">{mentor.experience}</p>
@@ -565,9 +595,9 @@ export default function Home() {
                             <p className="text-gray-300 text-sm">Faturamento Gerado</p>
                             <p className="text-white text-xl font-bold">{mentor.sales}</p>
                           </div>
-                        </div>
-                      </div>
-                    </div>
+                        </motion.div>
+                      </motion.div>
+                    </motion.div>
                   </CardContent>
                 </Card>
               </motion.div>
