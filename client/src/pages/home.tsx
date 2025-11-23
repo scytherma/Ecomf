@@ -827,9 +827,9 @@ export default function Home() {
             {...fadeInUp}
             className="text-center mb-12"
           >
-            <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-red-600 animate-pulse-glow">
+            <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
               <Clock className="w-4 h-4 mr-2" />
-              Últimas Vagas Disponíveis
+              Valor atual só até 31/12
             </Badge>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
               Garanta Sua Vaga Agora
@@ -842,11 +842,11 @@ export default function Home() {
           <motion.div
             {...fadeInUp}
           >
-            <Card className="bg-gradient-to-br from-purple-600/20 to-purple-900/20 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
+            <Card className="bg-gradient-to-br from-white to-white backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
               <CardContent className="p-12">
                 {/* Countdown Timer */}
                 <div className="mb-8">
-                  <p className="text-center text-gray-300 mb-4 text-lg">
+                  <p className="text-center text-gray-700 mb-4 text-lg">
                     Esta oferta expira em:
                   </p>
                   <div className="flex justify-center gap-4" data-testid="countdown-timer">
@@ -857,28 +857,28 @@ export default function Home() {
                     ].map((item) => (
                       <div key={item.label} className="text-center">
                         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 min-w-[80px]">
-                          <span className="text-4xl font-bold text-white font-mono">
+                          <span className="text-4xl font-bold text-black font-mono">
                             {String(item.value).padStart(2, '0')}
                           </span>
                         </div>
-                        <p className="text-gray-400 text-sm mt-2">{item.label}</p>
+                        <p className="text-gray-600 text-sm mt-2">{item.label}</p>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="text-center mb-8">
-                  <p className="text-gray-400 text-lg mb-2">De R$ 1.997,00 por apenas</p>
+                  <p className="text-gray-600 text-lg mb-2">De R$ 1.997,00 por apenas</p>
                   <div className="mb-4">
                     <span className="text-gray-500 line-through text-3xl">R$ 1.997,00</span>
                   </div>
                   <div className="mb-2">
                     <span className="text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                      R$ 997
+                      R$ 397
                     </span>
                   </div>
-                  <p className="text-gray-300 text-xl">
-                    ou <strong className="text-white">12x de R$ 97,00</strong>
+                  <p className="text-gray-700 text-xl">
+                    ou <strong className="text-black">12x de R$ 46,16</strong>
                   </p>
                 </div>
 
