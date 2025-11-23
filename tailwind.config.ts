@@ -83,10 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Zen Dots", "var(--font-sans)"],
+        sans: ["Intro Rust", "var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
-        heading: ["Zen Dots", "sans-serif"],
+        heading: ["Intro Rust", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
