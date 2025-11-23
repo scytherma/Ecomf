@@ -189,12 +189,12 @@ export default function Home() {
   ];
 
   const objectives = [
-    "Encontrar produtos vencedores com alto potencial de lucro",
-    "Criar anúncios que convertem e atraem compradores qualificados",
-    "Dominar as estratégias de precificação e margem de lucro",
-    "Escalar suas vendas de forma sustentável e lucrativa",
-    "Gerenciar estoque e logística com eficiência máxima",
-    "Construir uma marca forte e reconhecida no mercado",
+    "Identificar produtos vencedores com validação de mercado + análise de demanda comprovada",
+    "Criar anúncios high-converting que geram 3-5x ROI com copywriting estratégico",
+    "Dominar precificação psicológica + margem de lucro real (não é ganhar volume perdendo na margem)",
+    "Escalar de R$ 5mil para R$ 100mil/mês com sistemas replicáveis e automáticos",
+    "Otimizar logística, estoque inteligente e gestão de fornecedores para lucro máximo",
+    "Construir marca irrefutável que fideliza clientes e gera vendas repetidas",
   ];
 
   const modules = [
