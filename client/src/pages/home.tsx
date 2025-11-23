@@ -379,16 +379,25 @@ export default function Home() {
                   <CardContent className="p-8 text-center flex-1 flex flex-col justify-center">
                     <div className="mb-4 flex justify-center">
                       {platform.image ? (
-                        <img 
+                        <motion.img 
                           src={platform.image}
                           alt={`Logo do ${platform.name}`}
                           className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0 object-contain"
+                          whileInView={{ filter: "grayscale(0%)" }}
+                          initial={{ filter: "grayscale(100%)" }}
+                          viewport={{ once: false }}
                         />
                       ) : platform.icon ? (
-                        <platform.icon 
-                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0"
-                          style={{ color: platform.color }}
-                        />
+                        <motion.div
+                          whileInView={{ opacity: 1, filter: "grayscale(0%)" }}
+                          initial={{ opacity: 1, filter: "grayscale(100%)" }}
+                          viewport={{ once: false }}
+                        >
+                          <platform.icon 
+                            className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0"
+                            style={{ color: platform.color }}
+                          />
+                        </motion.div>
                       ) : (
                         <div 
                           className="w-16 h-16 rounded-lg flex items-center justify-center text-2xl font-bold transition-all duration-300 grayscale group-hover:grayscale-0"
