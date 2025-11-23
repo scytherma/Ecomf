@@ -77,6 +77,25 @@ const staggerItem = {
 
 export default function Home() {
   const { toast } = useToast();
+  const [isScrolling, setIsScrolling] = useState(false);
+  
+  useEffect(() => {
+    let scrollTimeout: NodeJS.Timeout;
+
+    const handleScroll = () => {
+      setIsScrolling(true);
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        setIsScrolling(false);
+      }, 1000);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
   
   const [timeLeft, setTimeLeft] = useState({
     hours: 12,
@@ -383,10 +402,9 @@ export default function Home() {
                           src={platform.image}
                           alt={`Logo do ${platform.name}`}
                           className="w-16 h-16 transition-all duration-300 object-contain"
-                          whileInView={{ filter: "grayscale(0%)" }}
-                          whileNotInView={{ filter: "grayscale(100%)" }}
+                          animate={{ filter: isScrolling ? "grayscale(0%)" : "grayscale(100%)" }}
+                          whileHover={{ filter: "grayscale(0%)" }}
                           initial={{ filter: "grayscale(100%)" }}
-                          viewport={{ once: false }}
                         />
                       ) : platform.icon ? (
                         <platform.icon 
