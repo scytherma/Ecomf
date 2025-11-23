@@ -632,7 +632,7 @@ export default function Home() {
                           src={module.image}
                           alt={`Logo do ${module.title}`}
                           className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
-                          style={{ filter: 'invert(0.5) sepia(1) saturate(3) hue-rotate(280deg) brightness(0.95) contrast(1.3)' }}
+                          style={{ filter: 'brightness(1.3) saturate(1.8) hue-rotate(265deg)' }}
                         />
                       ) : module.icon ? (
                         <module.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform duration-300" />
