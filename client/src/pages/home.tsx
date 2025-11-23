@@ -50,7 +50,7 @@ import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
-import mercadoLivreLogo from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763846344500.png";
+import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1763848977928.png";
 
 const fadeInUp = {
@@ -631,8 +631,7 @@ export default function Home() {
                         <img 
                           src={module.image}
                           alt={`Logo do ${module.title}`}
-                          className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
-                          style={{ filter: 'brightness(1.3) saturate(1.8) hue-rotate(265deg)' }}
+                          className="h-16 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
                         />
                       ) : module.icon ? (
                         <module.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform duration-300" />
