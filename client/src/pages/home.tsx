@@ -52,6 +52,7 @@ import learningImage from "@assets/generated_images/e-commerce_mastery_learning_
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
+import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1763848977928.png";
 
 const fadeInUp = {
@@ -75,6 +76,7 @@ const staggerItem = {
 
 export default function Home() {
   const { toast } = useToast();
+  const [mercadoLivreHover, setMercadoLivreHover] = useState(false);
   
   const [timeLeft, setTimeLeft] = useState({
     hours: 12,
@@ -369,6 +371,8 @@ export default function Home() {
                 variants={staggerItem}
                 transition={{ delay: index * 0.1 }}
                 className="h-full"
+                onMouseEnter={() => platform.name === "Mercado Livre" && setMercadoLivreHover(true)}
+                onMouseLeave={() => platform.name === "Mercado Livre" && setMercadoLivreHover(false)}
               >
                 <Card 
                   className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 border-t-4 border-t-transparent hover:border-t-purple-500 h-full flex flex-col"
@@ -378,9 +382,9 @@ export default function Home() {
                     <div className="mb-4 flex justify-center">
                       {platform.image ? (
                         <img 
-                          src={platform.image}
+                          src={platform.name === "Mercado Livre" && mercadoLivreHover ? mercadoLivreLogoColor : platform.image}
                           alt={`Logo do ${platform.name}`}
-                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0 object-contain"
+                          className="w-16 h-16 transition-all duration-300 object-contain"
                         />
                       ) : platform.icon ? (
                         <platform.icon 
