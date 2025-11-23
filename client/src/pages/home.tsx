@@ -513,7 +513,7 @@ export default function Home() {
               <img 
                 src={learningImage} 
                 alt="Ilustração de aprendizado em e-commerce com crescimento e desenvolvimento profissional" 
-                className="h-full w-auto object-contain rounded-xl shadow-2xl border border-white/10 relative z-10"
+                className="w-full h-full object-cover rounded-xl shadow-2xl border border-white/10 relative z-10"
               />
             </motion.div>
           </div>
