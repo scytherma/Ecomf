@@ -638,10 +638,10 @@ export default function Home() {
       </section>
 
       {/* What's Included */}
-      <section className="py-32 bg-gradient-to-b from-gray-900 via-purple-900/20 to-gray-900 relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-gray-900 via-purple-900/20 to-gray-900 relative overflow-hidden w-screen">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl -z-10" aria-hidden="true" />
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
             className="text-center mb-20"
@@ -659,7 +659,7 @@ export default function Home() {
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
             {[
               { 
