@@ -307,15 +307,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       
       {/* Hero Section */}
-      <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-        {/* Logo Header */}
-        <div className="absolute top-8 left-8 z-20">
-          <img 
-            src={ecomfyLogo} 
-            alt="Logo EcomFy" 
-            className="h-12 w-auto"
-          />
-        </div>
+      <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'left center', backgroundRepeat: 'no-repeat'}}>
 
         <div className="absolute bottom-16 left-8 z-10">
           <motion.div
