@@ -377,26 +377,26 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
+            <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
                   size="md"
-                  className="w-full sm:w-auto px-5 sm:px-7 py-2 sm:py-3 text-sm sm:text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
+                  className="w-full sm:w-auto px-4 sm:px-5 py-2 sm:py-3 text-xs sm:text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow whitespace-nowrap"
                   data-testid="button-cta-hero"
                 >
                   <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  Entrar para EcomFy agora
+                  Entrar para EcomFy
                 </Button>
               </a>
               
               <Button 
                 size="md"
                 variant="outline"
-                className="w-full sm:w-auto px-5 sm:px-7 py-2 sm:py-3 text-sm sm:text-base font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
+                className="w-full sm:w-auto px-4 sm:px-5 py-2 sm:py-3 text-xs sm:text-sm font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
                 data-testid="button-whatsapp-hero"
               >
                 <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Tirar dúvidas no WhatsApp
+                Tirar dúvidas
               </Button>
             </div>
           </motion.div>
