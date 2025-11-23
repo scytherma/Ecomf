@@ -384,7 +384,7 @@ export default function Home() {
                         <img 
                           src={platform.name === "Mercado Livre" && mercadoLivreHover ? mercadoLivreLogoColor : platform.image}
                           alt={`Logo do ${platform.name}`}
-                          className="w-16 h-16 transition-all duration-300 object-contain"
+                          className={`w-16 h-16 transition-all duration-300 object-contain ${platform.name === "Mercado Livre" ? (mercadoLivreHover ? "" : "grayscale") : "grayscale group-hover:grayscale-0"}`}
                         />
                       ) : platform.icon ? (
                         <platform.icon 
