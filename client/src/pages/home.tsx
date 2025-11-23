@@ -76,7 +76,6 @@ const staggerItem = {
 
 export default function Home() {
   const { toast } = useToast();
-  const [mercadoLivreHover, setMercadoLivreHover] = useState(false);
   
   const [timeLeft, setTimeLeft] = useState({
     hours: 12,
@@ -173,7 +172,7 @@ export default function Home() {
     },
     { 
       name: "Mercado Livre", 
-      image: mercadoLivreLogo,
+      image: mercadoLivreLogoColor,
       color: "#FFE600",
       description: "Técnicas comprovadas para se destacar no maior marketplace da América Latina"
     },
@@ -371,8 +370,6 @@ export default function Home() {
                 variants={staggerItem}
                 transition={{ delay: index * 0.1 }}
                 className="h-full"
-                onMouseEnter={() => platform.name === "Mercado Livre" && setMercadoLivreHover(true)}
-                onMouseLeave={() => platform.name === "Mercado Livre" && setMercadoLivreHover(false)}
               >
                 <Card 
                   className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 border-t-4 border-t-transparent hover:border-t-purple-500 h-full flex flex-col"
@@ -382,9 +379,9 @@ export default function Home() {
                     <div className="mb-4 flex justify-center">
                       {platform.image ? (
                         <img 
-                          src={platform.name === "Mercado Livre" && mercadoLivreHover ? mercadoLivreLogoColor : platform.image}
+                          src={platform.image}
                           alt={`Logo do ${platform.name}`}
-                          className={`w-16 h-16 transition-all duration-300 object-contain ${platform.name === "Mercado Livre" ? (mercadoLivreHover ? "" : "grayscale") : "grayscale group-hover:grayscale-0"}`}
+                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0 object-contain"
                         />
                       ) : platform.icon ? (
                         <platform.icon 
