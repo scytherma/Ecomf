@@ -220,7 +220,7 @@ export default function Home() {
       description: "Domine SEO Amazon + logística FBA Brasil que escala"
     },
     { 
-      icon: Sparkles,
+      customAdsIcon: true,
       title: "Conteúdo & Tráfego Multicanal", 
       lessons: 22,
       description: "Ads Shopee, ML, TikTok e Amazon + orgânico que converte"
@@ -628,8 +628,12 @@ export default function Home() {
                         <img 
                           src={module.image}
                           alt={`Logo do ${module.title}`}
-                          className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 brightness-0 invert saturate-0 hue-rotate-280 brightness-125"
                         />
+                      ) : module.customAdsIcon ? (
+                        <div className="w-12 h-12 rounded-lg flex items-center justify-center text-xs font-bold bg-gradient-to-br from-purple-500 to-purple-600 text-white group-hover:scale-110 transition-transform duration-300">
+                          ADS
+                        </div>
                       ) : module.icon ? (
                         <module.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform duration-300" />
                       ) : null}
