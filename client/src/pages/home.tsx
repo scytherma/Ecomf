@@ -407,10 +407,16 @@ export default function Home() {
                           initial={{ filter: "grayscale(100%)" }}
                         />
                       ) : platform.icon ? (
-                        <platform.icon 
-                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0"
-                          style={{ color: platform.color }}
-                        />
+                        <motion.div
+                          animate={{ filter: isScrolling ? "grayscale(0%)" : "grayscale(100%)" }}
+                          whileHover={{ filter: "grayscale(0%)" }}
+                          initial={{ filter: "grayscale(100%)" }}
+                        >
+                          <platform.icon 
+                            className="w-16 h-16 transition-all duration-300"
+                            style={{ color: platform.color }}
+                          />
+                        </motion.div>
                       ) : (
                         <div 
                           className="w-16 h-16 rounded-lg flex items-center justify-center text-2xl font-bold transition-all duration-300 grayscale group-hover:grayscale-0"
