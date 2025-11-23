@@ -762,7 +762,7 @@ export default function Home() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Card 
-                  className="group bg-gradient-to-br from-purple-600/10 to-purple-900/10 backdrop-blur-md border-purple-500/30 hover:border-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 h-full relative overflow-hidden"
+                  className="group bg-white/5 backdrop-blur-md border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 h-full relative overflow-hidden"
                   data-testid={`card-bonus-${index}`}
                 >
                   <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" aria-hidden="true" />
