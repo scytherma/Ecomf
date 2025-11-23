@@ -217,7 +217,7 @@ export default function Home() {
       description: "Viralize produtos e fature 6 em 7 com lives e anúncios"
     },
     { 
-      icon: Globe,
+      icon: SiAmazon,
       title: "Amazon Advanced", 
       lessons: 20,
       description: "Domine SEO Amazon + logística FBA Brasil que escala"
@@ -631,7 +631,8 @@ export default function Home() {
                         <img 
                           src={module.image}
                           alt={`Logo do ${module.title}`}
-                          className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 brightness-0 invert saturate-0 hue-rotate-280 brightness-125"
+                          className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                          style={{ filter: 'invert(0.3) sepia(1) saturate(2) hue-rotate(270deg) brightness(1.1)' }}
                         />
                       ) : module.icon ? (
                         <module.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform duration-300" />
