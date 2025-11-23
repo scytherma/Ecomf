@@ -638,7 +638,7 @@ export default function Home() {
       </section>
 
       {/* What's Included */}
-      <section className="py-32 bg-gradient-to-b from-gray-900 via-purple-900/20 to-gray-900 relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl -z-10" aria-hidden="true" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
