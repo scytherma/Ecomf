@@ -734,7 +734,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-16 pt-20"
+            className="text-center mb-16"
           >
             <Badge className="mb-8 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
               <Gift className="w-4 h-4 mr-2" />
