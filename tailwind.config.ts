@@ -83,10 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "var(--font-sans)"],
+        sans: ["Zen Dots", "var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
-        heading: ["Poppins", "Inter", "sans-serif"],
+        heading: ["Zen Dots", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
