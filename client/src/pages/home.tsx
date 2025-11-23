@@ -45,6 +45,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { insertContactLeadSchema } from "@shared/schema";
 
 import heroBanner from "@assets/fundo banner site ecomfy_1763876167157.png";
+import heroBannerMobile from "@assets/banner mobile ecomfy_1763882847453.png";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
@@ -326,8 +327,46 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       
-      {/* Hero Section */}
-      <section className="relative w-full overflow-hidden bg-black" style={{aspectRatio: '1920 / 773'}}>
+      {/* Hero Section - Mobile */}
+      <section className="relative w-full overflow-hidden bg-black md:hidden" style={{aspectRatio: '800 / 1232'}}>
+        <div className="absolute inset-0" style={{backgroundImage: `url(${heroBannerMobile})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
+        
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
+
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-start justify-end pb-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="flex flex-col gap-3 w-full">
+              <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
+                <Button 
+                  size="md"
+                  className="w-full px-5 py-2 text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
+                  data-testid="button-cta-hero"
+                >
+                  <Sparkles className="mr-2 h-4 w-4" />
+                  Entrar para EcomFy
+                </Button>
+              </a>
+              
+              <Button 
+                size="md"
+                variant="outline"
+                className="w-full px-5 py-2 text-sm font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
+                data-testid="button-whatsapp-hero"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" />
+                Tirar dúvidas no WhatsApp
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Hero Section - Desktop */}
+      <section className="relative w-full overflow-hidden bg-black hidden md:block" style={{aspectRatio: '1920 / 773'}}>
         <div className="absolute inset-0" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent" aria-hidden="true" />
