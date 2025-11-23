@@ -53,6 +53,7 @@ import testimonialWoman from "@assets/generated_images/Student_testimonial_portr
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
+import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
 import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1763848977928.png";
 
 const fadeInUp = {
@@ -184,7 +185,7 @@ export default function Home() {
     },
     { 
       name: "TikTok Shop", 
-      icon: SiTiktok, 
+      image: ttkshpLogo, 
       color: "#000000",
       description: "Aproveite a explosão do TikTok Shop e venda através de conteúdo viral"
     },
