@@ -868,11 +868,11 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-3 flex flex-col items-center">
                   <a href="https://pay.cakto.com.br/trrf6yf" className="block">
                     <Button 
                       size="lg"
-                      className="w-full font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
+                      className="font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
                       data-testid="button-cta-pricing"
                     >
                       <Sparkles className="mr-2 h-5 w-5" />
@@ -883,7 +883,7 @@ export default function Home() {
                   <Button 
                     size="lg"
                     variant="outline"
-                    className="w-full font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600"
+                    className="font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600"
                     data-testid="button-whatsapp-pricing"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
