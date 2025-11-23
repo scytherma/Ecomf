@@ -54,7 +54,6 @@ import testimonialMan from "@assets/generated_images/Student_testimonial_portrai
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
-import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1763848977928.png";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -881,15 +880,6 @@ export default function Home() {
           >
             <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
               <CardContent className="p-12">
-                {/* EcomFy Logo */}
-                <div className="mb-8 flex justify-center">
-                  <img 
-                    src={ecomfyLogo} 
-                    alt="EcomFy Logo" 
-                    className="h-14 object-contain"
-                  />
-                </div>
-
                 <div className="text-center mb-8">
                   <p className="text-gray-400 text-lg mb-2">De R$ 1.997,00 por apenas</p>
                   <div className="mb-4">
@@ -1107,13 +1097,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
-              <div className="mb-4">
-                <img 
-                  src={ecomfyLogo} 
-                  alt="Logo EcomFy" 
-                  className="h-10 w-auto"
-                />
-              </div>
               <p className="text-gray-400 mb-6">
                 Transformando vidas através do e-commerce. Aprenda a vender nas maiores plataformas do Brasil.
               </p>
