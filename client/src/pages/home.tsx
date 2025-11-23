@@ -362,7 +362,7 @@ export default function Home() {
       </section>
 
       {/* Platform Showcase */}
-      <section className="py-24 bg-gray-900">
+      <section className="py-24 bg-[#292b2f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -974,7 +974,7 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-900 to-gray-800">
+      <section className="py-24 bg-[#292b2f]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
