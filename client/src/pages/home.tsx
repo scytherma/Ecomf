@@ -849,7 +849,7 @@ export default function Home() {
                   <img 
                     src={ecomfyLogo} 
                     alt="EcomFy Logo" 
-                    className="h-32 object-contain"
+                    className="h-20 object-contain"
                   />
                 </div>
 
