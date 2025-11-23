@@ -307,7 +307,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto">
         {/* Animated Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-800 to-gray-900 animate-gradient-shift bg-[length:200%_200%]" />
         
