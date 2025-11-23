@@ -507,13 +507,13 @@ export default function Home() {
 
             <motion.div
               {...fadeInUp}
-              className="relative"
+              className="relative h-96"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-transparent rounded-xl" aria-hidden="true" />
               <img 
                 src={learningImage} 
                 alt="Ilustração de aprendizado em e-commerce com crescimento e desenvolvimento profissional" 
-                className="rounded-xl shadow-2xl border border-white/10"
+                className="w-full h-full object-cover rounded-xl shadow-2xl border border-white/10"
               />
             </motion.div>
           </div>
