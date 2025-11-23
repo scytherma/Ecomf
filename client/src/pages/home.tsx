@@ -380,7 +380,7 @@ export default function Home() {
                         <img 
                           src={platform.image}
                           alt={`Logo do ${platform.name}`}
-                          className="w-16 h-16 transition-all duration-300 object-contain"
+                          className="w-16 h-16 transition-all duration-300 grayscale group-hover:grayscale-0 object-contain"
                         />
                       ) : platform.icon ? (
                         <platform.icon 
