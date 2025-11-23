@@ -196,44 +196,34 @@ export default function Home() {
 
   const modules = [
     { 
-      image: null,
-      isCustomIcon: true,
-      customText: "ML",
+      image: mercadoLivreLogo,
       title: "Mercado Livre Pro", 
       lessons: 18,
-      description: "Estratégias avançadas para dominar o maior marketplace da América Latina"
+      description: "Do zero ao topo do ranking + anúncios que vendem sozinhos"
     },
     { 
-      image: null,
-      isCustomIcon: true,
-      customText: "SH",
+      icon: SiShopee,
       title: "Shopee Expert", 
       lessons: 16,
-      description: "Técnicas exclusivas para vender com sucesso na plataforma chinesa"
+      description: "Estratégias que explodiram sua loja de vendas"
     },
     { 
-      image: null,
-      isCustomIcon: true,
-      customText: "TK",
+      icon: SiTiktok,
       title: "TikTok Shop Master", 
       lessons: 15,
-      description: "Aproveite o crescimento viral do TikTok Shop"
+      description: "Viralize produtos e fature 6 em 7 com lives e anúncios"
     },
     { 
-      image: null,
-      isCustomIcon: true,
-      customText: "AM",
+      icon: SiAmazon,
       title: "Amazon Advanced", 
       lessons: 20,
-      description: "Escale seu negócio na maior plataforma de e-commerce do mundo"
+      description: "Domine SEO Amazon + logística FBA Brasil que escala"
     },
     { 
-      image: null,
-      isCustomIcon: true,
-      customText: "CT",
-      title: "Conteúdo e Tráfego Multicanal", 
+      icon: Sparkles,
+      title: "Conteúdo & Tráfego Multicanal", 
       lessons: 22,
-      description: "Estratégias de conteúdo e tráfego para vender em todas as plataformas"
+      description: "Ads Shopee, ML, TikTok e Amazon + orgânico que converte"
     },
     { 
       icon: Award, 
@@ -633,13 +623,15 @@ export default function Home() {
                   data-testid={`card-module-${index}`}
                 >
                   <CardContent className="p-8">
-                    <div className="mb-4">
-                      {module.isCustomIcon ? (
-                        <div className="w-12 h-12 rounded-lg flex items-center justify-center text-sm font-bold bg-gradient-to-br from-purple-500 to-purple-600 text-white group-hover:scale-110 transition-transform duration-300">
-                          {module.customText}
-                        </div>
+                    <div className="mb-4 h-12 flex items-center">
+                      {module.image ? (
+                        <img 
+                          src={module.image}
+                          alt={`Logo do ${module.title}`}
+                          className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
                       ) : module.icon ? (
-                        <module.icon className="w-12 h-12 text-primary group-hover:rotate-12 transition-transform duration-300" />
+                        <module.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform duration-300" />
                       ) : null}
                     </div>
                     <h3 className="font-heading text-2xl font-bold text-white mb-2">
