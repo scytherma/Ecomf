@@ -323,7 +323,7 @@ export default function Home() {
                   data-testid="button-cta-hero"
                 >
                   <Sparkles className="mr-2 h-5 w-5" />
-                  Garantir Vaga
+                  Entrar para EcomFy agora
                 </Button>
               </a>
               
@@ -334,7 +334,7 @@ export default function Home() {
                 data-testid="button-whatsapp-hero"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp
+                Tirar duvidas no whatsApp
               </Button>
             </div>
           </motion.div>
