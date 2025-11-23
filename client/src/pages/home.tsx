@@ -323,26 +323,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Badge 
-              className="mb-6 px-6 py-2 text-sm font-semibold bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 animate-float"
-              data-testid="badge-students"
-            >
-              <Users className="w-4 h-4 mr-2" />
-              2000+ Alunos Aprovados
-            </Badge>
-
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
-              Domine o E-commerce nas
-              <span className="block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                4 Maiores Plataformas
-              </span>
-              do Brasil
-            </h1>
-
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Aprenda a vender na <strong>Shopee, Mercado Livre, Amazon e TikTok Shop</strong> com estratégias comprovadas que já geraram mais de R$ 50 milhões em vendas
-            </p>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <a href="https://pay.cakto.com.br/trrf6yf">
                 <Button 
