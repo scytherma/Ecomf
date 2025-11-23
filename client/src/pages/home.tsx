@@ -28,7 +28,7 @@ import {
   Rocket,
   Globe,
 } from "lucide-react";
-import { SiShopee, SiAmazon, SiTiktok } from "react-icons/si";
+import { SiShopee, SiAmazon, SiTiktok, SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -395,7 +395,7 @@ export default function Home() {
                 className="w-full sm:w-auto px-4 sm:px-5 py-2 sm:py-3 text-xs sm:text-sm font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <SiWhatsapp className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Tirar dúvidas
               </Button>
             </div>
