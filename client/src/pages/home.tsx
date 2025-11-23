@@ -309,31 +309,31 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[773px] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'left center', backgroundRepeat: 'no-repeat'}}>
 
-        <div className="absolute bottom-16 left-8 z-10">
+        <div className="absolute bottom-16 left-48 z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-row gap-4">
               <a href="https://pay.cakto.com.br/trrf6yf">
                 <Button 
-                  size="sm"
-                  className="px-4 py-2 text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
+                  size="md"
+                  className="px-6 py-3 text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/50 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-4 w-4" />
+                  <Sparkles className="mr-2 h-5 w-5" />
                   Garantir Vaga
                 </Button>
               </a>
               
               <Button 
-                size="sm"
+                size="md"
                 variant="outline"
-                className="px-4 py-2 text-sm font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
+                className="px-6 py-3 text-base font-semibold bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-4 w-4" />
+                <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp
               </Button>
             </div>
