@@ -391,25 +391,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider 1 */}
-      <div className="relative h-32 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center overflow-hidden" aria-hidden="true">
-        <svg className="absolute w-full h-full opacity-30" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style={{ stopColor: '#A855F7', stopOpacity: 0.3 }} />
-              <stop offset="50%" style={{ stopColor: '#9333EA', stopOpacity: 0.5 }} />
-              <stop offset="100%" style={{ stopColor: '#A855F7', stopOpacity: 0.3 }} />
-            </linearGradient>
-          </defs>
-          <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="url(#grad1)" />
-        </svg>
-        <div className="relative z-10 text-center">
-          <div className="w-2 h-2 rounded-full bg-purple-500 mx-auto animate-pulse" />
-        </div>
-      </div>
-
       {/* Platform Showcase */}
-      <section className="py-24 bg-gray-900 relative">
+      <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -476,13 +459,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider 2 */}
-      <div className="relative h-32 bg-gradient-to-b from-gray-900 via-purple-900/20 to-gray-800 flex items-center justify-center overflow-hidden" aria-hidden="true">
-        <svg className="absolute w-full h-full opacity-20" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,30 Q300,80 600,30 T1200,30 L1200,0 L0,0 Z" fill="#A855F7" />
-        </svg>
-      </div>
-
       {/* Course Objectives */}
       <section className="py-24 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" aria-hidden="true" />
@@ -534,16 +510,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider 3 */}
-      <div className="relative h-24 bg-gradient-to-b from-gray-800 to-gray-900 flex items-center justify-center overflow-hidden" aria-hidden="true">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute left-1/4 top-0 w-96 h-32 bg-purple-500 rounded-full blur-3xl" />
-          <div className="absolute right-1/4 bottom-0 w-96 h-32 bg-purple-600 rounded-full blur-3xl" />
-        </div>
-      </div>
-
       {/* Mentors Section */}
-      <section className="py-24 bg-gray-900 relative">
+      <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
