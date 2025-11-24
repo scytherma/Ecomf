@@ -577,7 +577,7 @@ export default function Home() {
                 {carouselModules.map((module, index) => (
                   <div
                     key={index}
-                    className="flex-shrink-0 min-w-full sm:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)]"
+                    className="flex-shrink-0 min-w-full sm:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21px)]"
                     data-testid={`carousel-slide-${index}`}
                   >
                     <motion.div
