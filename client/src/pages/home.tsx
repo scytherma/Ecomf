@@ -307,14 +307,6 @@ export default function Home() {
       image: moduleImage4,
       title: "Amazon Advanced"
     },
-    { 
-      image: moduleImage5,
-      title: "Conteúdo & Tráfego Multicanal"
-    },
-    { 
-      image: moduleImage6,
-      title: "Escala & Automação"
-    },
   ];
 
   const bonuses = [
