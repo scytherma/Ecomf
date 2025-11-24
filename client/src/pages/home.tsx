@@ -9,6 +9,8 @@ import {
   Clock, 
   Gift,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Play,
   Star,
   Award,
@@ -43,6 +45,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertContactLeadSchema } from "@shared/schema";
+import useEmblaCarousel from "embla-carousel-react";
 
 import heroBanner from "@assets/fundo banner site ecomfy_1763876167157.png";
 import heroBannerMobile from "@assets/banner mobile ecomfy_1763882847453.png";
@@ -78,6 +81,27 @@ const staggerItem = {
 export default function Home() {
   const { toast } = useToast();
   const [isScrolling, setIsScrolling] = useState(false);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
+
+  const onSelect = () => {
+    if (!emblaApi) return;
+    setCanScrollPrev(emblaApi.canScrollPrev());
+    setCanScrollNext(emblaApi.canScrollNext());
+  };
+
+  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
+  const scrollNext = () => emblaApi && emblaApi.scrollNext();
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
   
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
@@ -481,59 +505,97 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Course Objectives */}
-      <section className="py-16 bg-[#292b2f] relative overflow-visible">
+      {/* Course Modules Carousel */}
+      <section className="py-16 bg-[#292b2f] relative overflow-hidden">
         <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
-            <motion.div {...fadeInUp}>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
-                O Que Você Vai Aprender
-              </h2>
-              <p className="text-xl text-gray-400 mb-8">
-                Transforme-se em um especialista em e-commerce com nosso método passo a passo
-              </p>
-              
-              <div className="space-y-4">
-                {objectives.map((objective, index) => (
-                  <motion.div
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+              O Que Você Vai Aprender
+            </h2>
+            <p className="text-xl text-gray-400">
+              Transforme-se em um especialista em e-commerce com nosso método passo a passo
+            </p>
+          </motion.div>
+
+          <div className="flex items-center justify-center gap-4 md:gap-8">
+            {/* Left Arrow */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={scrollPrev}
+              disabled={!canScrollPrev}
+              className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500/50 text-white hover:border-purple-400 hover:bg-purple-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              data-testid="button-carousel-prev"
+              aria-label="Ver módulos anteriores"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </motion.button>
+
+            {/* Carousel Container */}
+            <div className="flex-1 overflow-hidden" ref={emblaRef}>
+              <div className="flex gap-4">
+                {modules.map((module, index) => (
+                  <div
                     key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="group"
-                    data-testid={`objective-${index}`}
+                    className="flex-shrink-0 min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)]"
+                    data-testid={`carousel-slide-${index}`}
                   >
-                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
-                      <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 mt-1">
-                          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white text-sm font-bold group-hover:scale-110 transition-transform">
-                            {index + 1}
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <Card className="group relative h-80 bg-gradient-to-br from-purple-600/20 to-gray-900 backdrop-blur-md border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
+                        {/* Gradient Background */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent group-hover:opacity-80 transition-opacity" aria-hidden="true" />
+                        
+                        <CardContent className="p-8 relative z-10 flex flex-col justify-end h-full">
+                          <div className="mb-4 flex items-center justify-center">
+                            {module.image ? (
+                              <img 
+                                src={module.image} 
+                                alt={`Logo do ${module.title}`}
+                                className="h-16 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                              />
+                            ) : module.icon ? (
+                              <module.icon className="w-16 h-16 text-primary group-hover:scale-110 transition-transform duration-300" />
+                            ) : null}
                           </div>
-                        </div>
-                        <p className="text-gray-200 text-base leading-relaxed">
-                          {objective}
-                        </p>
-                      </div>
-                    </div>
-                  </motion.div>
+                          <h3 className="font-heading text-2xl font-bold text-white mb-2 text-center">
+                            {module.title}
+                          </h3>
+                          <p className="text-purple-300 text-sm text-center mb-3">
+                            {module.lessons} aulas
+                          </p>
+                          <p className="text-gray-300 text-sm leading-relaxed text-center">
+                            {module.description}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              {...fadeInUp}
-              className="relative h-96 flex items-center justify-center"
+            {/* Right Arrow */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={scrollNext}
+              disabled={!canScrollNext}
+              className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500/50 text-white hover:border-purple-400 hover:bg-purple-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              data-testid="button-carousel-next"
+              aria-label="Ver próximos módulos"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-transparent rounded-xl" aria-hidden="true" />
-              <img 
-                src={learningImage} 
-                alt="Ilustração de aprendizado em e-commerce com crescimento e desenvolvimento profissional" 
-                className="w-full h-full object-cover rounded-xl shadow-2xl border border-white/10 relative z-10"
-              />
-            </motion.div>
+              <ChevronRight className="w-6 h-6" />
+            </motion.button>
           </div>
         </div>
       </section>
