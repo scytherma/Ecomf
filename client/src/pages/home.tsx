@@ -587,7 +587,7 @@ export default function Home() {
                       transition={{ delay: index * 0.1 }}
                       className="h-full"
                     >
-                      <Card className="group relative w-full h-72 rounded-lg border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
+                      <Card className="group relative rounded-lg border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col" style={{ width: "480px", height: "720px" }}>
                         {/* Full Image Only */}
                         {module.image && (
                           <div className="relative w-full h-full overflow-hidden">
