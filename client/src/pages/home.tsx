@@ -573,11 +573,11 @@ export default function Home() {
 
             {/* Carousel Container */}
             <div className="flex-1 overflow-hidden" ref={emblaRef}>
-              <div className="flex gap-8">
+              <div className="flex gap-12">
                 {carouselModules.map((module, index) => (
                   <div
                     key={index}
-                    className="flex-shrink-0 min-w-full sm:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21px)]"
+                    className="flex-shrink-0 min-w-full sm:min-w-[calc(50%-18px)] lg:min-w-[calc(33.333%-24px)]"
                     data-testid={`carousel-slide-${index}`}
                   >
                     <motion.div
