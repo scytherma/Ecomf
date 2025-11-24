@@ -573,7 +573,7 @@ export default function Home() {
 
             {/* Carousel Container */}
             <div className="flex-1 overflow-hidden" ref={emblaRef}>
-              <div className="flex gap-6">
+              <div className="flex gap-8">
                 {carouselModules.map((module, index) => (
                   <div
                     key={index}
