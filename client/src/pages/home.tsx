@@ -59,6 +59,14 @@ import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
 
+// Module images
+import moduleImage1 from "@assets/generated_images/mercado_livre_pro_module.png";
+import moduleImage2 from "@assets/generated_images/shopee_expert_module.png";
+import moduleImage3 from "@assets/generated_images/tiktok_shop_master_module.png";
+import moduleImage4 from "@assets/generated_images/amazon_advanced_module.png";
+import moduleImage5 from "@assets/generated_images/content_and_traffic_module.png";
+import moduleImage6 from "@assets/generated_images/scaling_and_automation_module.png";
+
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -245,37 +253,37 @@ export default function Home() {
 
   const modules = [
     { 
-      image: mercadoLivreLogo,
+      image: moduleImage1,
       title: "Mercado Livre Pro", 
       lessons: 18,
       description: "Do zero ao topo do ranking + anúncios que vendem sozinhos"
     },
     { 
-      icon: SiShopee,
+      image: moduleImage2,
       title: "Shopee Expert", 
       lessons: 16,
       description: "Estratégias que explodiram sua loja de vendas"
     },
     { 
-      icon: SiTiktok,
+      image: moduleImage3,
       title: "TikTok Shop Master", 
       lessons: 15,
       description: "Viralize produtos e fature 6 em 7 com lives e anúncios"
     },
     { 
-      icon: SiAmazon,
+      image: moduleImage4,
       title: "Amazon Advanced", 
       lessons: 20,
       description: "Domine SEO Amazon + logística FBA Brasil que escala"
     },
     { 
-      icon: Megaphone,
+      image: moduleImage5,
       title: "Conteúdo & Tráfego Multicanal", 
       lessons: 22,
       description: "Ads Shopee, ML, TikTok e Amazon + orgânico que converte"
     },
     { 
-      icon: Rocket, 
+      image: moduleImage6,
       title: "Escala & Automação", 
       lessons: 14,
       description: "Seu e-commerce operando 24/7 com processos automatizados e crescimento escalável"
@@ -550,32 +558,37 @@ export default function Home() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
+                      className="h-full"
                     >
-                      <Card className="group relative h-80 bg-gradient-to-br from-purple-600/20 to-gray-900 backdrop-blur-md border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
-                        {/* Gradient Background */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent group-hover:opacity-80 transition-opacity" aria-hidden="true" />
-                        
-                        <CardContent className="p-8 relative z-10 flex flex-col justify-end h-full">
-                          <div className="mb-4 flex items-center justify-center">
-                            {module.image ? (
-                              <img 
-                                src={module.image} 
-                                alt={`Logo do ${module.title}`}
-                                className="h-16 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
-                              />
-                            ) : module.icon ? (
-                              <module.icon className="w-16 h-16 text-primary group-hover:scale-110 transition-transform duration-300" />
-                            ) : null}
+                      <Card className="group relative h-96 bg-white backdrop-blur-md border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
+                        {/* Image Section - Top Half */}
+                        {module.image && (
+                          <div className="relative h-1/2 overflow-hidden">
+                            <img 
+                              src={module.image} 
+                              alt={`Módulo ${module.title}`}
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 group-hover:to-black/60 transition-all duration-300" aria-hidden="true" />
                           </div>
-                          <h3 className="font-heading text-2xl font-bold text-white mb-2 text-center">
-                            {module.title}
-                          </h3>
-                          <p className="text-purple-300 text-sm text-center mb-3">
-                            {module.lessons} aulas
-                          </p>
-                          <p className="text-gray-300 text-sm leading-relaxed text-center">
-                            {module.description}
-                          </p>
+                        )}
+                        
+                        {/* Content Section - Bottom Half */}
+                        <CardContent className="p-6 relative z-10 flex flex-col justify-between h-1/2">
+                          <div>
+                            <h3 className="font-heading text-xl font-bold text-gray-900 mb-1">
+                              {module.title}
+                            </h3>
+                            <p className="text-purple-600 text-xs font-semibold mb-3">
+                              {module.lessons} aulas
+                            </p>
+                            <p className="text-gray-600 text-xs leading-relaxed">
+                              {module.description}
+                            </p>
+                          </div>
+                          <div className="pt-3 border-t border-gray-200 mt-3">
+                            <span className="text-xs font-semibold text-purple-600">Explorar Módulo →</span>
+                          </div>
                         </CardContent>
                       </Card>
                     </motion.div>
