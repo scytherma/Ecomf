@@ -307,6 +307,14 @@ export default function Home() {
       image: moduleImage4,
       title: "Amazon Advanced"
     },
+    { 
+      image: moduleImage5,
+      title: "Conteúdo & Tráfego Multicanal"
+    },
+    { 
+      image: moduleImage6,
+      title: "Escala & Automação"
+    },
   ];
 
   const bonuses = [
@@ -532,6 +540,86 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Course Modules Carousel */}
+      <section className="py-16 bg-[#292b2f] relative overflow-hidden">
+        <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+              O Que Você Vai Aprender
+            </h2>
+            <p className="text-xl text-gray-400">
+              Transforme-se em um especialista em e-commerce com nosso método passo a passo
+            </p>
+          </motion.div>
+
+          <div className="flex items-center justify-center gap-4 md:gap-8">
+            {/* Left Arrow */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={scrollPrev}
+              disabled={!canScrollPrev}
+              className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500/50 text-white hover:border-purple-400 hover:bg-purple-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              data-testid="button-carousel-prev"
+              aria-label="Ver módulos anteriores"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </motion.button>
+
+            {/* Carousel Container */}
+            <div className="flex-1 overflow-hidden" ref={emblaRef}>
+              <div className="flex gap-6">
+                {carouselModules.map((module, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 px-3"
+                    data-testid={`carousel-slide-${index}`}
+                  >
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="h-full"
+                    >
+                      <Card className="group relative w-full h-72 rounded-lg border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
+                        {/* Full Image Only */}
+                        {module.image && (
+                          <div className="relative w-full h-full overflow-hidden">
+                            <img 
+                              src={module.image} 
+                              alt={`Módulo ${module.title}`}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                        )}
+                      </Card>
+                    </motion.div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right Arrow */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={scrollNext}
+              disabled={!canScrollNext}
+              className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500/50 text-white hover:border-purple-400 hover:bg-purple-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              data-testid="button-carousel-next"
+              aria-label="Ver próximos módulos"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </motion.button>
+          </div>
+        </div>
+      </section>
 
       {/* Mentors Section */}
       <section className="py-12 bg-[#292b2f]">
