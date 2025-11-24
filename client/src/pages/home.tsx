@@ -253,40 +253,67 @@ export default function Home() {
 
   const modules = [
     { 
-      image: moduleImage1,
+      image: mercadoLivreLogo,
       title: "Mercado Livre Pro", 
       lessons: 18,
       description: "Do zero ao topo do ranking + anúncios que vendem sozinhos"
     },
     { 
-      image: moduleImage2,
+      icon: SiShopee,
       title: "Shopee Expert", 
       lessons: 16,
       description: "Estratégias que explodiram sua loja de vendas"
     },
     { 
-      image: moduleImage3,
+      icon: SiTiktok,
       title: "TikTok Shop Master", 
       lessons: 15,
       description: "Viralize produtos e fature 6 em 7 com lives e anúncios"
     },
     { 
-      image: moduleImage4,
+      icon: SiAmazon,
       title: "Amazon Advanced", 
       lessons: 20,
       description: "Domine SEO Amazon + logística FBA Brasil que escala"
     },
     { 
-      image: moduleImage5,
+      icon: Megaphone,
       title: "Conteúdo & Tráfego Multicanal", 
       lessons: 22,
       description: "Ads Shopee, ML, TikTok e Amazon + orgânico que converte"
     },
     { 
-      image: moduleImage6,
+      icon: Rocket, 
       title: "Escala & Automação", 
       lessons: 14,
       description: "Seu e-commerce operando 24/7 com processos automatizados e crescimento escalável"
+    },
+  ];
+
+  const carouselModules = [
+    { 
+      image: moduleImage1,
+      title: "Mercado Livre Pro"
+    },
+    { 
+      image: moduleImage2,
+      title: "Shopee Expert"
+    },
+    { 
+      image: moduleImage3,
+      title: "TikTok Shop Master"
+    },
+    { 
+      image: moduleImage4,
+      title: "Amazon Advanced"
+    },
+    { 
+      image: moduleImage5,
+      title: "Conteúdo & Tráfego Multicanal"
+    },
+    { 
+      image: moduleImage6,
+      title: "Escala & Automação"
     },
   ];
 
@@ -547,7 +574,7 @@ export default function Home() {
             {/* Carousel Container */}
             <div className="flex-1 overflow-hidden" ref={emblaRef}>
               <div className="flex gap-4">
-                {modules.map((module, index) => (
+                {carouselModules.map((module, index) => (
                   <div
                     key={index}
                     className="flex-shrink-0 min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)]"
