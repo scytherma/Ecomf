@@ -560,36 +560,17 @@ export default function Home() {
                       transition={{ delay: index * 0.1 }}
                       className="h-full"
                     >
-                      <Card className="group relative h-96 bg-white backdrop-blur-md border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
-                        {/* Image Section - Top Half */}
+                      <Card className="group relative w-full h-72 rounded-lg border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
+                        {/* Full Image Only */}
                         {module.image && (
-                          <div className="relative h-1/2 overflow-hidden">
+                          <div className="relative w-full h-full overflow-hidden">
                             <img 
                               src={module.image} 
                               alt={`Módulo ${module.title}`}
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 group-hover:to-black/60 transition-all duration-300" aria-hidden="true" />
                           </div>
                         )}
-                        
-                        {/* Content Section - Bottom Half */}
-                        <CardContent className="p-6 relative z-10 flex flex-col justify-between h-1/2">
-                          <div>
-                            <h3 className="font-heading text-xl font-bold text-gray-900 mb-1">
-                              {module.title}
-                            </h3>
-                            <p className="text-purple-600 text-xs font-semibold mb-3">
-                              {module.lessons} aulas
-                            </p>
-                            <p className="text-gray-600 text-xs leading-relaxed">
-                              {module.description}
-                            </p>
-                          </div>
-                          <div className="pt-3 border-t border-gray-200 mt-3">
-                            <span className="text-xs font-semibold text-purple-600">Explorar Módulo →</span>
-                          </div>
-                        </CardContent>
                       </Card>
                     </motion.div>
                   </div>
