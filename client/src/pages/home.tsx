@@ -408,7 +408,7 @@ export default function Home() {
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">mais cresce no e-commerce</span><br />
               Brasileiro em 2025
             </h1>
-            <div className="flex flex-col gap-3 w-full max-w-sm mt-4">
+            <div className="flex flex-col gap-3 w-full max-w-sm mt-4 mb-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
                   size="lg"
@@ -455,7 +455,7 @@ export default function Home() {
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">mais cresce no e-commerce</span><br />
               Brasileiro em 2025
             </h1>
-            <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-6">
+            <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-6 mb-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
                   size="lg"
