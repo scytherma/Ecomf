@@ -1007,8 +1007,6 @@ export default function Home() {
 
       {/* Pricing Section */}
       <section className="py-12 bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 via-transparent to-purple-600/10" aria-hidden="true" />
-        
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
