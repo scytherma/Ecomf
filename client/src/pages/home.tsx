@@ -412,10 +412,10 @@ export default function Home() {
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
                   size="lg"
-                  className="w-full px-6 py-4 text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
+                  className="w-full px-8 py-6 text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-5 w-5" />
+                  <Sparkles className="mr-3 h-6 w-6" />
                   Entrar para EcomFy
                 </Button>
               </a>
@@ -423,10 +423,10 @@ export default function Home() {
               <Button 
                 size="lg"
                 variant="outline"
-                className="w-full px-6 py-4 text-base font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
+                className="w-full px-8 py-6 text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
+                <MessageCircle className="mr-3 h-6 w-6" />
                 Tirar dúvidas no WhatsApp
               </Button>
             </div>
@@ -459,10 +459,10 @@ export default function Home() {
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
                   size="lg"
-                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow whitespace-nowrap"
+                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow whitespace-nowrap"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
+                  <Sparkles className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
                   Entrar para EcomFy
                 </Button>
               </a>
@@ -470,10 +470,10 @@ export default function Home() {
               <Button 
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
+                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
                 data-testid="button-whatsapp-hero"
               >
-                <SiWhatsapp className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
+                <SiWhatsapp className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
                 Tirar dúvidas
               </Button>
             </div>
