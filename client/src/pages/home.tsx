@@ -398,6 +398,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center max-w-sm leading-tight">
+              Descubra o modelo que mais cresce <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">no e-commerce brasileiro</span> em 2025
+            </h1>
             <div className="flex flex-col gap-3 w-full max-w-sm">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
@@ -436,6 +439,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 max-w-3xl leading-tight">
+              Descubra o modelo que mais cresce <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">no e-commerce brasileiro</span> em 2025
+            </h1>
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
