@@ -400,7 +400,7 @@ export default function Home() {
           >
             <h1 className="text-lg sm:text-xl font-bold text-white mb-8 text-left max-w-sm leading-tight">
               Descubra o modelo que<br />
-              <span className="text-yellow-400 font-bold">mais cresce</span> no e-commerce<br />
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">mais cresce no e-commerce</span><br />
               Brasileiro em 2025
             </h1>
             <div className="flex flex-col gap-3 w-full max-w-sm">
@@ -443,7 +443,7 @@ export default function Home() {
           >
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 max-w-3xl leading-tight">
               Descubra o modelo que<br />
-              <span className="text-yellow-400 font-bold">mais cresce</span> no e-commerce<br />
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">mais cresce no e-commerce</span><br />
               Brasileiro em 2025
             </h1>
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl">
