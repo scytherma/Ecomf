@@ -404,9 +404,8 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-bold text-white mb-4 text-left max-w-sm" style={{fontSize: '3.20rem', lineHeight: '3.0rem'}}>
-              Descubra o modelo que<br />
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">mais cresce no e-commerce</span><br />
-              Brasileiro em 2025
+              Chegou a hora de conhecer o segredo<br />
+              das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
             <div className="flex flex-col gap-3 w-full max-w-sm mt-40 mb-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
@@ -451,9 +450,8 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-bold text-white mb-4 max-w-3xl" style={{fontSize: '3.20rem', lineHeight: '3.0rem'}}>
-              Descubra o modelo que<br />
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">mais cresce no e-commerce</span><br />
-              Brasileiro em 2025
+              Chegou a hora de conhecer o segredo<br />
+              das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-40 mb-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
