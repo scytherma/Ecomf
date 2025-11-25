@@ -49,6 +49,7 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import heroBanner from "@assets/hero_1764108857538.png";
 import heroBannerMobile from "@assets/banner mobile ecomfy_1763882847453.png";
+import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1764111230989.png";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
 import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_interface_424066ef.png";
@@ -392,6 +393,10 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
 
+        <div className="absolute inset-0 w-full px-4 pt-4 flex flex-col items-start">
+          <img src={ecomfyLogo} alt="EcomFy Logo" className="h-12 mb-auto" />
+        </div>
+
         <div className="absolute inset-0 w-full px-4 flex flex-col items-start justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -434,6 +439,10 @@ export default function Home() {
         <div className="absolute inset-0" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent" aria-hidden="true" />
+
+        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 pt-6 flex flex-col items-start">
+          <img src={ecomfyLogo} alt="EcomFy Logo" className="h-16 mb-auto" />
+        </div>
 
         <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center">
           <motion.div
