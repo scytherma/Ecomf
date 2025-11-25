@@ -562,6 +562,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
       {/* Course Modules Carousel */}
       <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
         <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
@@ -642,6 +645,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Mentors Section */}
       <section className="py-12" style={{backgroundColor: '#111014'}}>
@@ -753,6 +759,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
       {/* Course Modules */}
       <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -813,6 +822,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* What's Included */}
       <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
@@ -906,6 +918,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
       {/* Exclusive Bonuses */}
       <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -962,6 +977,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Testimonials */}
       <section className="py-12" style={{backgroundColor: '#111014'}}>
@@ -1026,6 +1044,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Pricing Section */}
       <section className="py-12 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
