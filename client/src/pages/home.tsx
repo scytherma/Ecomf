@@ -48,7 +48,7 @@ import { insertContactLeadSchema } from "@shared/schema";
 import useEmblaCarousel from "embla-carousel-react";
 
 import heroBanner from "@assets/hero_1764108857538.png";
-import heroBannerMobile from "@assets/banner mobile ecomfy_1763882847453.png";
+import heroBannerMobile from "@assets/Hero-celular_1764113847231.png";
 import ecomfyLogo from "@assets/LOGO ECOMFY TRP_1764111230989.png";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
