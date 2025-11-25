@@ -411,22 +411,22 @@ export default function Home() {
             <div className="flex flex-col gap-3 w-full max-w-sm">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
-                  size="md"
-                  className="w-full px-5 py-2 text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
+                  size="lg"
+                  className="w-full px-6 py-4 text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-4 w-4" />
+                  <Sparkles className="mr-2 h-5 w-5" />
                   Entrar para EcomFy
                 </Button>
               </a>
               
               <Button 
-                size="md"
+                size="lg"
                 variant="outline"
-                className="w-full px-5 py-2 text-sm font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
+                className="w-full px-6 py-4 text-base font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-4 w-4" />
+                <MessageCircle className="mr-2 h-5 w-5" />
                 Tirar dúvidas no WhatsApp
               </Button>
             </div>
@@ -458,22 +458,22 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
-                  size="md"
-                  className="w-full sm:w-auto px-4 sm:px-5 py-2 sm:py-3 text-xs sm:text-sm font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow whitespace-nowrap"
+                  size="lg"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow whitespace-nowrap"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <Sparkles className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
                   Entrar para EcomFy
                 </Button>
               </a>
               
               <Button 
-                size="md"
+                size="lg"
                 variant="outline"
-                className="w-full sm:w-auto px-4 sm:px-5 py-2 sm:py-3 text-xs sm:text-sm font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
                 data-testid="button-whatsapp-hero"
               >
-                <SiWhatsapp className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <SiWhatsapp className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
                 Tirar dúvidas
               </Button>
             </div>
