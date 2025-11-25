@@ -399,8 +399,9 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-lg sm:text-xl font-bold text-white mb-8 text-left max-w-sm leading-tight">
-              Descubra o modelo que <span className="text-yellow-400 font-bold">mais cresce no</span><br />
-              e-commerce brasileiro em 2025
+              Descubra o modelo que<br />
+              <span className="text-yellow-400 font-bold">mais cresce</span> no e-commerce<br />
+              Brasileiro em 2025
             </h1>
             <div className="flex flex-col gap-3 w-full max-w-sm">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
@@ -441,8 +442,9 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 max-w-3xl leading-tight">
-              Descubra o modelo que <span className="text-yellow-400 font-bold">mais cresce no</span><br />
-              e-commerce brasileiro em 2025
+              Descubra o modelo que<br />
+              <span className="text-yellow-400 font-bold">mais cresce</span> no e-commerce<br />
+              Brasileiro em 2025
             </h1>
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
