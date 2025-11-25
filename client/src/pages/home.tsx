@@ -47,7 +47,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { insertContactLeadSchema } from "@shared/schema";
 import useEmblaCarousel from "embla-carousel-react";
 
-import heroBanner from "@assets/fundo banner site ecomfy_1763876167157.png";
+import heroBanner from "@assets/hero_1764108857538.png";
 import heroBannerMobile from "@assets/banner mobile ecomfy_1763882847453.png";
 import mentorDiogo from "@assets/Mentor diogo_1763848325108.jpg";
 import mentorOliveira from "@assets/MENTOR OLIVEIRAa_1763852347253.png";
@@ -425,7 +425,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section - Desktop */}
-      <section className="relative w-full overflow-hidden bg-black hidden md:block" style={{aspectRatio: '1920 / 773'}}>
+      <section className="relative w-full overflow-hidden bg-black hidden md:block" style={{aspectRatio: '1920 / 1080'}}>
         <div className="absolute inset-0" style={{backgroundImage: `url(${heroBanner})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent" aria-hidden="true" />
