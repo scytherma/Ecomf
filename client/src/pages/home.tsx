@@ -563,7 +563,7 @@ export default function Home() {
       </section>
 
       {/* Course Modules Carousel */}
-      <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
+      <section className="py-16 relative overflow-visible" style={{backgroundColor: '#111014'}}>
         <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
