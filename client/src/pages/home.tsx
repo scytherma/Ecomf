@@ -397,7 +397,7 @@ export default function Home() {
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-8" />
         </div>
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-start justify-center">
+        <div className="absolute inset-0 w-full px-4 pt-32 flex flex-col items-start">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -444,7 +444,7 @@ export default function Home() {
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-12" />
         </div>
 
-        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center">
+        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 pt-40 flex flex-col items-start">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
