@@ -392,13 +392,13 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-start justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-lg sm:text-xl font-bold text-white mb-8 text-center max-w-sm leading-tight">
+            <h1 className="text-lg sm:text-xl font-bold text-white mb-8 text-left max-w-sm leading-tight">
               Descubra o modelo que <span className="text-yellow-400 font-bold">mais cresce no</span><br />
               e-commerce brasileiro em 2025
             </h1>
