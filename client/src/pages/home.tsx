@@ -393,7 +393,7 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-start justify-center">
+        <div className="absolute inset-0 w-full px-4 pt-4 flex flex-col items-start">
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-8" />
         </div>
 
@@ -440,7 +440,7 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center">
+        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 pt-6 flex flex-col items-start">
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-12" />
         </div>
 
