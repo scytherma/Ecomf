@@ -392,13 +392,13 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center -translate-y-16">
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center -translate-y-32">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-2xl sm:text-3xl font-bold text-white mb-8 text-center max-w-sm leading-tight">
+            <h1 className="text-lg sm:text-xl font-bold text-white mb-8 text-center max-w-sm leading-tight">
               Descubra o modelo que mais cresce <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">no e-commerce brasileiro</span> em 2025
             </h1>
             <div className="flex flex-col gap-3 w-full max-w-sm">
@@ -433,13 +433,13 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-end pb-12 md:pb-16">
+        <div className="absolute inset-0 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-end pb-24 md:pb-32">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 max-w-3xl leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 max-w-3xl leading-tight">
               Descubra o modelo que mais cresce <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">no e-commerce brasileiro</span> em 2025
             </h1>
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl">
