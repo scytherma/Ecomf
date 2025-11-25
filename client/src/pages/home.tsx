@@ -482,7 +482,7 @@ export default function Home() {
       </section>
 
       {/* Platform Showcase */}
-      <section className="py-12 bg-black">
+      <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -560,7 +560,7 @@ export default function Home() {
       </section>
 
       {/* Course Modules Carousel */}
-      <section className="py-16 bg-black relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
         <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -641,7 +641,7 @@ export default function Home() {
       </section>
 
       {/* Mentors Section */}
-      <section className="py-12 bg-black">
+      <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -751,7 +751,7 @@ export default function Home() {
       </section>
 
       {/* Course Modules */}
-      <section className="py-12 bg-black">
+      <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -812,7 +812,7 @@ export default function Home() {
       </section>
 
       {/* What's Included */}
-      <section className="py-16 bg-black relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl -z-10" aria-hidden="true" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -904,7 +904,7 @@ export default function Home() {
       </section>
 
       {/* Exclusive Bonuses */}
-      <section className="py-12 bg-black">
+      <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -961,7 +961,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 bg-black">
+      <section className="py-12" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -1025,7 +1025,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-12 bg-black relative overflow-hidden">
+      <section className="py-12 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
