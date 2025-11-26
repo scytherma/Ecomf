@@ -476,87 +476,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
-
-      {/* Platform Showcase */}
-      <section className="py-20" style={{backgroundColor: '#111014'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            {...fadeInUp}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Shopee, Mercado Livre, Amazon e TikTok Shop, domine todas de uma vez
-            </h2>
-            <p className="text-xl text-gray-400">
-              Passo a passo testado e validado nas 4 maiores plataformas do e-commerce
-            </p>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {platforms.map((platform, index) => (
-              <motion.div
-                key={platform.name}
-                variants={staggerItem}
-                transition={{ delay: index * 0.1 }}
-                className="h-full"
-              >
-                <Card 
-                  className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 border-t-4 border-t-transparent hover:border-t-purple-500 h-full flex flex-col"
-                  data-testid={`card-platform-${platform.name.toLowerCase().replace(' ', '-')}`}
-                >
-                  <CardContent className="p-8 text-center flex-1 flex flex-col justify-center">
-                    <div className="mb-4 flex justify-center">
-                      {platform.image ? (
-                        <motion.img 
-                          src={platform.image}
-                          alt={`Logo do ${platform.name}`}
-                          className="w-16 h-16 transition-all duration-300 object-contain"
-                          animate={{ filter: isScrolling ? "grayscale(0%)" : "grayscale(100%)" }}
-                          whileHover={{ filter: "grayscale(0%)" }}
-                          initial={{ filter: "grayscale(100%)" }}
-                        />
-                      ) : platform.icon ? (
-                        <motion.div
-                          animate={{ filter: isScrolling ? "grayscale(0%)" : "grayscale(100%)" }}
-                          whileHover={{ filter: "grayscale(0%)" }}
-                          initial={{ filter: "grayscale(100%)" }}
-                        >
-                          <platform.icon 
-                            className="w-16 h-16 transition-all duration-300"
-                            style={{ color: platform.color }}
-                          />
-                        </motion.div>
-                      ) : (
-                        <div 
-                          className="w-16 h-16 rounded-lg flex items-center justify-center text-2xl font-bold transition-all duration-300 grayscale group-hover:grayscale-0"
-                          style={{ backgroundColor: platform.color, color: "#000" }}
-                        >
-                          ML
-                        </div>
-                      )}
-                    </div>
-                    <h3 className="font-heading text-2xl font-bold text-white mb-3">
-                      {platform.name}
-                    </h3>
-                    <p className="text-gray-400 leading-relaxed">
-                      {platform.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
       {/* About EcomFy Section */}
       <section className="py-16" style={{backgroundColor: '#111014'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -649,6 +568,87 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
+      {/* Platform Showcase */}
+      <section className="py-20" style={{backgroundColor: '#111014'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+              Shopee, Mercado Livre, Amazon e TikTok Shop, domine todas de uma vez
+            </h2>
+            <p className="text-xl text-gray-400">
+              Passo a passo testado e validado nas 4 maiores plataformas do e-commerce
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            {platforms.map((platform, index) => (
+              <motion.div
+                key={platform.name}
+                variants={staggerItem}
+                transition={{ delay: index * 0.1 }}
+                className="h-full"
+              >
+                <Card 
+                  className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 border-t-4 border-t-transparent hover:border-t-purple-500 h-full flex flex-col"
+                  data-testid={`card-platform-${platform.name.toLowerCase().replace(' ', '-')}`}
+                >
+                  <CardContent className="p-8 text-center flex-1 flex flex-col justify-center">
+                    <div className="mb-4 flex justify-center">
+                      {platform.image ? (
+                        <motion.img 
+                          src={platform.image}
+                          alt={`Logo do ${platform.name}`}
+                          className="w-16 h-16 transition-all duration-300 object-contain"
+                          animate={{ filter: isScrolling ? "grayscale(0%)" : "grayscale(100%)" }}
+                          whileHover={{ filter: "grayscale(0%)" }}
+                          initial={{ filter: "grayscale(100%)" }}
+                        />
+                      ) : platform.icon ? (
+                        <motion.div
+                          animate={{ filter: isScrolling ? "grayscale(0%)" : "grayscale(100%)" }}
+                          whileHover={{ filter: "grayscale(0%)" }}
+                          initial={{ filter: "grayscale(100%)" }}
+                        >
+                          <platform.icon 
+                            className="w-16 h-16 transition-all duration-300"
+                            style={{ color: platform.color }}
+                          />
+                        </motion.div>
+                      ) : (
+                        <div 
+                          className="w-16 h-16 rounded-lg flex items-center justify-center text-2xl font-bold transition-all duration-300 grayscale group-hover:grayscale-0"
+                          style={{ backgroundColor: platform.color, color: "#000" }}
+                        >
+                          ML
+                        </div>
+                      )}
+                    </div>
+                    <h3 className="font-heading text-2xl font-bold text-white mb-3">
+                      {platform.name}
+                    </h3>
+                    <p className="text-gray-400 leading-relaxed">
+                      {platform.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
