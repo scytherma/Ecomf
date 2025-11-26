@@ -407,6 +407,9 @@ export default function Home() {
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
+            <p className="text-gray-300 text-sm mb-8 text-left max-w-sm">
+              Prepare-se: dia 12/12 a EcomFy abre as portas e revela tudo
+            </p>
             <div className="flex flex-col gap-3 w-full max-w-sm mt-40 mb-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
@@ -453,6 +456,9 @@ export default function Home() {
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
+            <p className="text-gray-300 text-sm mb-8 max-w-3xl">
+              Prepare-se: dia 12/12 a EcomFy abre as portas e revela tudo
+            </p>
             <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-40 mb-auto">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
