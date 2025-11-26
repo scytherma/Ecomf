@@ -477,93 +477,65 @@ export default function Home() {
       </section>
 
       {/* About EcomFy Section */}
-      <section className="py-16" style={{backgroundColor: '#111014'}}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            {...fadeInUp}
-            className="text-gray-300 text-base space-y-6"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-              Qual é o objetivo da EcomFy e o que você vai aprender?
-            </h2>
-
-            <p>
-              Um dos maiores obstáculos de quem quer viver de e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro.
-            </p>
-            
-            <p>
-              Foi exatamente por isso que Diogo e Oliveira (dois mentores que juntos já faturaram múltiplos 7 dígitos em Mercado Livre, Shopee, TikTok Shop e Amazon) criaram a EcomFy.
-            </p>
-
-            <p>
-              A EcomFy é o treinamento mais completo e atualizado do Brasil para quem quer dominar o e-commerce nas maiores plataformas do Brasil:
-            </p>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-              <div className="flex items-center gap-2 text-purple-400 font-bold">
-                <Store className="w-5 h-5" />
-                Mercado Livre
+      <section className="py-20" style={{backgroundColor: '#111014'}}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            {/* Left Content with Border */}
+            <motion.div
+              {...fadeInUp}
+              className="flex-1 border-l-4 border-purple-500 pl-8"
+            >
+              <div className="text-sm font-bold text-purple-400 mb-4 tracking-wider">
+                OBJETIVO
               </div>
-              <div className="flex items-center gap-2 text-purple-400 font-bold">
-                <SiShopee className="w-5 h-5" />
-                Shopee
+
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Qual é o <span className="text-purple-400">objetivo da EcomFy</span>
+                <br />
+                e o <span className="text-purple-400">que você vai aprender?</span>
+              </h2>
+
+              <div className="text-gray-300 text-base space-y-6">
+                <p>
+                  Um dos maiores obstáculos de quem quer viver de e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro.
+                </p>
+                
+                <p>
+                  Foi pensando nisso que criamos o modelo e treinamento <span className="text-purple-400 font-bold">Eco Drop</span>. hoje considerado um dos maiores da América Latina. Uma referência em resultados <span className="text-purple-400 font-bold">práticos, comprovados e transformadores</span> reais, com mais de <span className="text-purple-400 font-bold">2 mil alunos</span> já colocando tudo isso em prática.
+                </p>
+
+                <p>
+                  O foco do Eco Drop é guiar no e-commerce do absoluto zero até o nível avançado, com <span className="text-purple-400 font-bold">guias práticas e diretas ao ponto</span>. Você vai aprender a <span className="text-purple-400 font-bold">vender nas principais plataformas</span> do marketplace, como Shopee, Mercado Livre, Shein, entre outras.
+                </p>
+
+                <p>
+                  O treinamento serve tanto para <span className="text-purple-400 font-bold">quem já tem alguém experiência quanto para quem nunca vendeu nada</span> online e quer começar agora, do jeito certo.
+                </p>
+
+                <p>
+                  Tudo isso focado na sua principal fonte de <span className="text-purple-400 font-bold">renda</span>, uma renda extra considerada no dia a dia do seu negócio atual.
+                </p>
+
+                <p>
+                  Mais do que vender online, aqui <span className="text-purple-400 font-bold">você aprende a construir um negócio de verdade</span>.
+                </p>
               </div>
-              <div className="flex items-center gap-2 text-purple-400 font-bold">
-                <SiTiktok className="w-5 h-5" />
-                TikTok Shop
+            </motion.div>
+
+            {/* Right Image Placeholder */}
+            <motion.div
+              {...fadeInUp}
+              transition={{ delay: 0.2 }}
+              className="flex-1 w-full lg:w-auto"
+            >
+              <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900 flex items-center justify-center">
+                <div className="text-gray-500 text-center p-8">
+                  <div className="w-24 h-24 rounded-full bg-gray-700 mx-auto mb-4" />
+                  <p className="text-sm">Espaço para imagem</p>
+                </div>
               </div>
-              <div className="flex items-center gap-2 text-purple-400 font-bold">
-                <SiAmazon className="w-5 h-5" />
-                Amazon
-              </div>
-            </div>
-
-            <p>
-              Nosso foco é um só: te levar do absoluto zero até o nível avançado de forma prática, direta e sem enrolação, com o mesmo passo a passo que nós usamos para construir e escalar nossas próprias lojas até 6 e 7 dígitos por mês.
-            </p>
-
-            <p className="font-bold text-white text-lg">Aqui você vai aprender:</p>
-
-            <ul className="space-y-3">
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                <span>Como encontrar produtos vencedores que vendem todos os dias</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                <span>Como criar anúncios e lives que convertem de verdade</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                <span>Como dominar o tráfego pago e orgânico nas 4 plataformas</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                <span>Como precificar, gerenciar estoque e logística com margem alta</span>
-              </li>
-              <li className="flex gap-3">
-                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                <span>Como escalar suas vendas de forma sustentável e lucrativa</span>
-              </li>
-            </ul>
-
-            <p>
-              Serve tanto para quem nunca vendeu nada online e quer começar do jeito certo, quanto para quem já tem loja e quer explodir o faturamento nas plataformas.
-            </p>
-
-            <p>
-              Mais do que "vender coisinhas na internet", na EcomFy você constrói um negócio sólido, previsível e altamente lucrativo, com potencial para virar sua principal fonte de renda (ou a renda extra que você sempre quis).
-            </p>
-
-            <p>
-              Tudo isso com dois mentores que vivem o jogo todos os dias, Diogo e Oliveiras, te mostrando tela a tela, conta real, estratégia real.
-            </p>
-
-            <p className="text-white font-bold text-lg">
-              Pronto para dominar as 4 gigantes do e-commerce brasileiro de uma vez por todas?<br />
-              Então a EcomFy foi feita pra você.
-            </p>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
