@@ -480,7 +480,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent" aria-hidden="true" />
 
       {/* About EcomFy Section */}
-      <section className="py-20" style={{backgroundColor: '#111014'}}>
+      <section className="py-20" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Left Content with Border */}
@@ -542,7 +542,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Platform Showcase */}
-      <section className="py-20" style={{backgroundColor: '#111014'}}>
+      <section className="py-20" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -620,7 +620,7 @@ export default function Home() {
       </section>
 
       {/* Course Modules Carousel */}
-      <section className="py-16 relative overflow-visible" style={{backgroundColor: '#111014'}}>
+      <section className="py-16 relative overflow-visible" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -704,7 +704,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Mentors Section */}
-      <section className="py-12" style={{backgroundColor: '#111014'}}>
+      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -817,7 +817,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Course Modules */}
-      <section className="py-12" style={{backgroundColor: '#111014'}}>
+      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -881,7 +881,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* What's Included */}
-      <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
+      <section className="py-16 relative overflow-hidden" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl -z-10" aria-hidden="true" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -976,7 +976,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Exclusive Bonuses */}
-      <section className="py-12" style={{backgroundColor: '#111014'}}>
+      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -1036,7 +1036,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Testimonials */}
-      <section className="py-12" style={{backgroundColor: '#111014'}}>
+      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -1103,7 +1103,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Pricing Section */}
-      <section className="py-12 relative overflow-hidden" style={{backgroundColor: '#111014'}}>
+      <section className="py-12 relative overflow-hidden" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
