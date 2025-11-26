@@ -413,24 +413,14 @@ export default function Home() {
             <div className="flex flex-col gap-3 w-full max-w-sm">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
-                  size="lg"
-                  className="w-full px-8 py-6 text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
+                  size="default"
+                  className="w-full px-6 py-3 text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
                   data-testid="button-cta-hero"
                 >
-                  <Sparkles className="mr-3 h-6 w-6" />
+                  <Sparkles className="mr-3 h-5 w-5" />
                   Entrar para EcomFy
                 </Button>
               </a>
-              
-              <Button 
-                size="lg"
-                variant="outline"
-                className="w-full px-8 py-6 text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
-                data-testid="button-whatsapp-hero"
-              >
-                <MessageCircle className="mr-3 h-6 w-6" />
-                Tirar dúvidas no WhatsApp
-              </Button>
             </div>
           </motion.div>
         </div>
