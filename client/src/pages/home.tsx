@@ -402,7 +402,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mt-auto mb-8"
+            className="mt-auto mb-4"
           >
             <h1 className="font-bold text-white mb-4 text-center max-w-sm" style={{fontSize: '1.75rem', lineHeight: '2.0rem'}}>
               Chegou a hora de conhecer o segredo<br />
