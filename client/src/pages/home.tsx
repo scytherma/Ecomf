@@ -476,6 +476,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent" aria-hidden="true" />
+
       {/* About EcomFy Section */}
       <section className="py-20" style={{backgroundColor: '#111014'}}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
