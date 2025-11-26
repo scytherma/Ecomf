@@ -482,7 +482,7 @@ export default function Home() {
       {/* About EcomFy Section */}
       <section className="py-20" style={{backgroundColor: '#111014'}}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Left Content with Border */}
             <motion.div
               {...fadeInUp}
