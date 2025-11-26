@@ -83,10 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Intro Rust", "var(--font-sans)"],
+        sans: ["Clash Display", "var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
-        heading: ["Intro Rust", "sans-serif"],
+        heading: ["Clash Display", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
