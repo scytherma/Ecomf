@@ -397,7 +397,7 @@ export default function Home() {
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-8" />
         </div>
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-center pt-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -410,19 +410,19 @@ export default function Home() {
             <p className="text-gray-300 text-sm mb-8 text-center max-w-sm">
               Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
-            <div className="flex flex-col gap-3 w-full max-w-sm">
-              <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
-                <Button 
-                  size="default"
-                  className="w-full px-6 py-3 text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
-                  data-testid="button-cta-hero"
-                >
-                  <Sparkles className="mr-3 h-5 w-5" />
-                  Entrar para EcomFy
-                </Button>
-              </a>
-            </div>
           </motion.div>
+          <div className="flex flex-col gap-3 w-full max-w-sm mt-auto mb-8">
+            <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
+              <Button 
+                size="default"
+                className="w-full px-6 py-3 text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-glow"
+                data-testid="button-cta-hero"
+              >
+                <Sparkles className="mr-3 h-5 w-5" />
+                Entrar para EcomFy
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
