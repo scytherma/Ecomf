@@ -402,6 +402,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="mt-auto mb-8"
           >
             <h1 className="font-bold text-white mb-4 text-center max-w-sm" style={{fontSize: '1.75rem', lineHeight: '2.0rem'}}>
               Chegou a hora de conhecer o segredo<br />
@@ -411,7 +412,7 @@ export default function Home() {
               Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
           </motion.div>
-          <div className="flex flex-col gap-3 w-full max-w-sm mt-auto mb-8">
+          <div className="flex flex-col gap-3 w-full max-w-sm mb-8">
             <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
               <Button 
                 size="default"
