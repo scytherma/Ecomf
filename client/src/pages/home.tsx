@@ -397,11 +397,12 @@ export default function Home() {
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-8" />
         </div>
 
-        <div className="absolute inset-0 w-full px-4 flex flex-col items-center pt-20">
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="mt-auto"
           >
             <h1 className="font-bold text-white mb-4 text-center max-w-sm" style={{fontSize: '1.75rem', lineHeight: '2.0rem'}}>
               Chegou a hora de conhecer o segredo<br />
