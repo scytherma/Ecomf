@@ -502,25 +502,51 @@ export default function Home() {
                 <p>
                   Um dos maiores obstáculos de quem quer viver de e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro.
                 </p>
-                
+
                 <p>
-                  Foi pensando nisso que criamos o modelo e treinamento <span className="text-purple-400 font-bold">Eco Drop</span>. hoje considerado um dos maiores da América Latina. Uma referência em resultados <span className="text-purple-400 font-bold">práticos, comprovados e transformadores</span> reais, com mais de <span className="text-purple-400 font-bold">2 mil alunos</span> já colocando tudo isso em prática.
+                  Foi exatamente por isso que <span className="text-purple-400 font-bold">Diogo e Oliveira</span> (dois mentores que juntos já faturaram <span className="text-purple-400 font-bold">múltiplos 7 dígitos</span> em Mercado Livre, Shopee, TikTok Shop e Amazon) criaram a <span className="text-purple-400 font-bold">EcomFy</span>.
                 </p>
 
                 <p>
-                  O foco do Eco Drop é guiar no e-commerce do absoluto zero até o nível avançado, com <span className="text-purple-400 font-bold">guias práticas e diretas ao ponto</span>. Você vai aprender a <span className="text-purple-400 font-bold">vender nas principais plataformas</span> do marketplace, como Shopee, Mercado Livre, Shein, entre outras.
+                  A EcomFy é o <span className="text-purple-400 font-bold">treinamento mais completo e atualizado do Brasil</span> para quem quer dominar o e-commerce nas maiores plataformas do Brasil:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 ml-2">
+                  <li>Mercado Livre</li>
+                  <li>Shopee</li>
+                  <li>TikTok Shop</li>
+                  <li>Amazon</li>
+                </ul>
+
+                <p>
+                  Nosso foco é um só: <span className="text-purple-400 font-bold">te levar do absoluto zero até o nível avançado</span> de forma prática, direta e sem enrolação, com o mesmo passo a passo que nós usamos para construir e escalar nossas próprias lojas até 6 e 7 dígitos por mês.
+                </p>
+
+                <p className="font-bold text-purple-400">Aqui você vai aprender:</p>
+
+                <ul className="list-disc list-inside space-y-2 ml-2">
+                  <li>Como encontrar produtos vencedores que vendem todos os dias</li>
+                  <li>Como criar anúncios e lives que convertem de verdade</li>
+                  <li>Como dominar o tráfego pago e orgânico nas 4 plataformas</li>
+                  <li>Como precificar, gerenciar estoque e logística com margem alta</li>
+                  <li>Como escalar suas vendas de forma sustentável e lucrativa</li>
+                </ul>
+
+                <p>
+                  Serve tanto para <span className="text-purple-400 font-bold">quem nunca vendeu nada online</span> e quer começar do jeito certo, quanto para <span className="text-purple-400 font-bold">quem já tem loja</span> e quer explodir o faturamento nas plataformas.
                 </p>
 
                 <p>
-                  O treinamento serve tanto para <span className="text-purple-400 font-bold">quem já tem alguém experiência quanto para quem nunca vendeu nada</span> online e quer começar agora, do jeito certo.
+                  Mais do que "vender coisinhas na internet", na EcomFy você <span className="text-purple-400 font-bold">constrói um negócio sólido, previsível e altamente lucrativo</span>, com potencial para virar sua <span className="text-purple-400 font-bold">principal fonte de renda</span> (ou a renda extra que você sempre quis).
                 </p>
 
                 <p>
-                  Tudo isso focado na sua principal fonte de <span className="text-purple-400 font-bold">renda</span>, uma renda extra considerada no dia a dia do seu negócio atual.
+                  Tudo isso com dois mentores que <span className="text-purple-400 font-bold">vivem o jogo todos os dias</span>, Diogo e Oliveira, te mostrando tela a tela, conta real, estratégia real.
                 </p>
 
-                <p>
-                  Mais do que vender online, aqui <span className="text-purple-400 font-bold">você aprende a construir um negócio de verdade</span>.
+                <p className="font-bold text-lg text-purple-300 mt-8">
+                  Pronto para dominar as 4 gigantes do e-commerce brasileiro de uma vez por todas?<br />
+                  Então a EcomFy foi feita pra você.
                 </p>
               </div>
             </motion.div>
