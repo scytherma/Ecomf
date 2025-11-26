@@ -483,7 +483,7 @@ export default function Home() {
             {/* Left Content with Border */}
             <motion.div
               {...fadeInUp}
-              className="flex-1 border-l-4 border-purple-500 pl-8"
+              className="flex-1 border-l-4 border-primary pl-8"
             >
               <div className="text-sm font-bold text-purple-400 mb-4 tracking-wider">
                 OBJETIVO
