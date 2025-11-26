@@ -393,24 +393,24 @@ export default function Home() {
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="absolute inset-0 w-full px-4 pt-28 flex flex-col items-start">
+        <div className="absolute inset-0 w-full px-4 pt-28 flex flex-col items-center justify-center">
           <img src={ecomfyLogo} alt="EcomFy Logo" className="h-8" />
         </div>
 
-        <div className="absolute inset-0 w-full px-4 pt-40 flex flex-col items-start">
+        <div className="absolute inset-0 w-full px-4 flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="font-bold text-white mb-4 text-left max-w-sm" style={{fontSize: '2.3rem', lineHeight: '2.5rem'}}>
+            <h1 className="font-bold text-white mb-4 text-center max-w-sm" style={{fontSize: '1.75rem', lineHeight: '2.0rem'}}>
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
-            <p className="text-gray-300 text-sm mb-8 text-left max-w-sm">
+            <p className="text-gray-300 text-sm mb-8 text-center max-w-sm">
               Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
-            <div className="flex flex-col gap-3 w-full max-w-sm mt-40 mb-auto">
+            <div className="flex flex-col gap-3 w-full max-w-sm">
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
                 <Button 
                   size="lg"
