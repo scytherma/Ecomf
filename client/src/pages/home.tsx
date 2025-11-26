@@ -404,11 +404,11 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mt-auto mb-4"
           >
-            <h1 className="font-bold text-white mb-2 text-center max-w-sm" style={{fontSize: '1.1rem', lineHeight: '1.4rem'}}>
+            <h1 className="font-bold text-white mb-1 text-center max-w-sm" style={{fontSize: '1.1rem', lineHeight: '1.4rem'}}>
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
-            <p className="text-gray-300 text-xs mb-6 text-center max-w-sm">
+            <p className="text-gray-300 text-xs mb-4 text-center max-w-sm">
               Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
           </motion.div>
