@@ -487,10 +487,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Aprenda a Vender nas 4 Plataformas
+              Shopee, Mercado Livre, Amazon e TikTok Shop, domine todas de uma vez
             </h2>
             <p className="text-xl text-gray-400">
-              Domine cada marketplace com estratégias específicas e comprovadas
+              Passo a passo testado e validado nas 4 maiores plataformas do e-commerce
             </p>
           </motion.div>
 
