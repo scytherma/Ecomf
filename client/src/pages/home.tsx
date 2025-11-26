@@ -480,7 +480,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Platform Showcase */}
-      <section className="py-12" style={{backgroundColor: '#111014'}}>
+      <section className="py-20" style={{backgroundColor: '#111014'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
