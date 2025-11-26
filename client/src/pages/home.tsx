@@ -481,93 +481,88 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
-            className="mb-12"
+            className="text-gray-300 text-base space-y-6"
           >
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="about-ecomfy" className="border-b border-purple-500/30">
-                <AccordionTrigger className="text-xl md:text-2xl font-bold text-white hover:text-purple-400 transition-colors py-6">
-                  Qual é o objetivo da EcomFy e o que você vai aprender?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-base space-y-6 pb-6">
-                  <p>
-                    Um dos maiores obstáculos de quem quer viver de e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro.
-                  </p>
-                  
-                  <p>
-                    Foi exatamente por isso que Diogo e Oliveira (dois mentores que juntos já faturaram múltiplos 7 dígitos em Mercado Livre, Shopee, TikTok Shop e Amazon) criaram a EcomFy.
-                  </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+              Qual é o objetivo da EcomFy e o que você vai aprender?
+            </h2>
 
-                  <p>
-                    A EcomFy é o treinamento mais completo e atualizado do Brasil para quem quer dominar o e-commerce nas maiores plataformas do Brasil:
-                  </p>
+            <p>
+              Um dos maiores obstáculos de quem quer viver de e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro.
+            </p>
+            
+            <p>
+              Foi exatamente por isso que Diogo e Oliveira (dois mentores que juntos já faturaram múltiplos 7 dígitos em Mercado Livre, Shopee, TikTok Shop e Amazon) criaram a EcomFy.
+            </p>
 
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-                    <div className="flex items-center gap-2 text-purple-400 font-bold">
-                      <Store className="w-5 h-5" />
-                      Mercado Livre
-                    </div>
-                    <div className="flex items-center gap-2 text-purple-400 font-bold">
-                      <SiShopee className="w-5 h-5" />
-                      Shopee
-                    </div>
-                    <div className="flex items-center gap-2 text-purple-400 font-bold">
-                      <SiTiktok className="w-5 h-5" />
-                      TikTok Shop
-                    </div>
-                    <div className="flex items-center gap-2 text-purple-400 font-bold">
-                      <SiAmazon className="w-5 h-5" />
-                      Amazon
-                    </div>
-                  </div>
+            <p>
+              A EcomFy é o treinamento mais completo e atualizado do Brasil para quem quer dominar o e-commerce nas maiores plataformas do Brasil:
+            </p>
 
-                  <p>
-                    Nosso foco é um só: te levar do absoluto zero até o nível avançado de forma prática, direta e sem enrolação, com o mesmo passo a passo que nós usamos para construir e escalar nossas próprias lojas até 6 e 7 dígitos por mês.
-                  </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
+              <div className="flex items-center gap-2 text-purple-400 font-bold">
+                <Store className="w-5 h-5" />
+                Mercado Livre
+              </div>
+              <div className="flex items-center gap-2 text-purple-400 font-bold">
+                <SiShopee className="w-5 h-5" />
+                Shopee
+              </div>
+              <div className="flex items-center gap-2 text-purple-400 font-bold">
+                <SiTiktok className="w-5 h-5" />
+                TikTok Shop
+              </div>
+              <div className="flex items-center gap-2 text-purple-400 font-bold">
+                <SiAmazon className="w-5 h-5" />
+                Amazon
+              </div>
+            </div>
 
-                  <p className="font-bold text-white">Aqui você vai aprender:</p>
+            <p>
+              Nosso foco é um só: te levar do absoluto zero até o nível avançado de forma prática, direta e sem enrolação, com o mesmo passo a passo que nós usamos para construir e escalar nossas próprias lojas até 6 e 7 dígitos por mês.
+            </p>
 
-                  <ul className="space-y-3">
-                    <li className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span>Como encontrar produtos vencedores que vendem todos os dias</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span>Como criar anúncios e lives que convertem de verdade</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span>Como dominar o tráfego pago e orgânico nas 4 plataformas</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span>Como precificar, gerenciar estoque e logística com margem alta</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span>Como escalar suas vendas de forma sustentável e lucrativa</span>
-                    </li>
-                  </ul>
+            <p className="font-bold text-white text-lg">Aqui você vai aprender:</p>
 
-                  <p>
-                    Serve tanto para quem nunca vendeu nada online e quer começar do jeito certo, quanto para quem já tem loja e quer explodir o faturamento nas plataformas.
-                  </p>
+            <ul className="space-y-3">
+              <li className="flex gap-3">
+                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <span>Como encontrar produtos vencedores que vendem todos os dias</span>
+              </li>
+              <li className="flex gap-3">
+                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <span>Como criar anúncios e lives que convertem de verdade</span>
+              </li>
+              <li className="flex gap-3">
+                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <span>Como dominar o tráfego pago e orgânico nas 4 plataformas</span>
+              </li>
+              <li className="flex gap-3">
+                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <span>Como precificar, gerenciar estoque e logística com margem alta</span>
+              </li>
+              <li className="flex gap-3">
+                <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <span>Como escalar suas vendas de forma sustentável e lucrativa</span>
+              </li>
+            </ul>
 
-                  <p>
-                    Mais do que "vender coisinhas na internet", na EcomFy você constrói um negócio sólido, previsível e altamente lucrativo, com potencial para virar sua principal fonte de renda (ou a renda extra que você sempre quis).
-                  </p>
+            <p>
+              Serve tanto para quem nunca vendeu nada online e quer começar do jeito certo, quanto para quem já tem loja e quer explodir o faturamento nas plataformas.
+            </p>
 
-                  <p>
-                    Tudo isso com dois mentores que vivem o jogo todos os dias, Diogo e Oliveiras, te mostrando tela a tela, conta real, estratégia real.
-                  </p>
+            <p>
+              Mais do que "vender coisinhas na internet", na EcomFy você constrói um negócio sólido, previsível e altamente lucrativo, com potencial para virar sua principal fonte de renda (ou a renda extra que você sempre quis).
+            </p>
 
-                  <p className="text-white font-bold text-lg">
-                    Pronto para dominar as 4 gigantes do e-commerce brasileiro de uma vez por todas?<br />
-                    Então a EcomFy foi feita pra você.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <p>
+              Tudo isso com dois mentores que vivem o jogo todos os dias, Diogo e Oliveiras, te mostrando tela a tela, conta real, estratégia real.
+            </p>
+
+            <p className="text-white font-bold text-lg">
+              Pronto para dominar as 4 gigantes do e-commerce brasileiro de uma vez por todas?<br />
+              Então a EcomFy foi feita pra você.
+            </p>
           </motion.div>
         </div>
       </section>
