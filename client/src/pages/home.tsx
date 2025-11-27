@@ -61,6 +61,7 @@ import testimonialHugo from "/images/testimonial-hugo.jpg";
 import bonusSupportVip from "/images/bonus-support-vip.png";
 import bonusGroupsVip from "/images/bonus-groups-vip.png";
 import bonusProductsChampions from "/images/bonus-products-champions.png";
+import bonusSuppliers from "/images/bonus-suppliers.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -1024,7 +1025,7 @@ export default function Home() {
               {
                 title: "Lista de Fornecedores",
                 description: "Mais de 100 fornecedores, importadores e distribuidores nacionais e internacionais.",
-                image: moduleImage2
+                image: bonusSuppliers
               },
               {
                 title: "Lista de Insumos e embalagem",
