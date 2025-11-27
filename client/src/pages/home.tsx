@@ -1164,12 +1164,15 @@ export default function Home() {
               Valor atual só até 31/12
             </Badge>
             
-            <div className="border-l-4 border-primary pl-6 inline-block text-left">
-              <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">ÚLTIMA CHANCE</p>
-              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent leading-tight">
-                Agora que viu tudo que vai receber, quanto acha que isso custaria?
-              </h2>
+            <div className="mb-6">
+              <Badge className="px-4 py-2 text-xs font-bold bg-primary/20 text-primary border border-primary">
+                INVESTIMENTO
+              </Badge>
             </div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent leading-tight">
+              Agora que viu tudo que vai receber, quanto acha que isso custaria?
+            </h2>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
