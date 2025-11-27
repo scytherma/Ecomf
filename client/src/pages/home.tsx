@@ -500,11 +500,11 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 items-center justify-start">
             {/* Left Content with Border */}
             <motion.div
               {...fadeInUp}
-              className="flex-1 border-l-4 border-primary pl-8"
+              className="w-full lg:w-2/3 border-l-4 border-primary pl-8"
             >
               <div className="text-sm font-bold text-primary mb-4 tracking-wider">
                 OBJETIVO
@@ -543,7 +543,7 @@ export default function Home() {
             <motion.div
               {...fadeInUp}
               transition={{ delay: 0.2 }}
-              className="flex-1 w-full lg:w-auto"
+              className="w-full lg:w-1/3"
             >
               <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900 flex items-center justify-center">
                 <div className="text-gray-500 text-center p-8">
