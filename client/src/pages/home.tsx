@@ -66,14 +66,6 @@ import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
 
-// Module images
-import moduleImage1 from "@assets/generated_images/mercado_livre_pro_module.png";
-import moduleImage2 from "@assets/generated_images/shopee_expert_module.png";
-import moduleImage3 from "@assets/generated_images/tiktok_shop_master_module.png";
-import moduleImage4 from "@assets/generated_images/amazon_advanced_module.png";
-import moduleImage5 from "@assets/generated_images/content_and_traffic_module.png";
-import moduleImage6 from "@assets/generated_images/scaling_and_automation_module.png";
-
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -258,71 +250,6 @@ export default function Home() {
     "Construir marca irrefutável que fideliza clientes e gera vendas repetidas",
   ];
 
-  const modules = [
-    { 
-      image: mercadoLivreLogo,
-      title: "Mercado Livre Pro", 
-      lessons: 18,
-      description: "Do zero ao topo do ranking + anúncios que vendem sozinhos"
-    },
-    { 
-      icon: SiShopee,
-      title: "Shopee Expert", 
-      lessons: 16,
-      description: "Estratégias que explodiram sua loja de vendas"
-    },
-    { 
-      icon: SiTiktok,
-      title: "TikTok Shop Master", 
-      lessons: 15,
-      description: "Viralize produtos e fature 6 em 7 com lives e anúncios"
-    },
-    { 
-      icon: SiAmazon,
-      title: "Amazon Advanced", 
-      lessons: 20,
-      description: "Domine SEO Amazon + logística FBA Brasil que escala"
-    },
-    { 
-      icon: Megaphone,
-      title: "Conteúdo & Tráfego Multicanal", 
-      lessons: 22,
-      description: "Ads Shopee, ML, TikTok e Amazon + orgânico que converte"
-    },
-    { 
-      icon: Rocket, 
-      title: "Escala & Automação", 
-      lessons: 14,
-      description: "Seu e-commerce operando 24/7 com processos automatizados e crescimento escalável"
-    },
-  ];
-
-  const carouselModules = [
-    { 
-      image: moduleImage1,
-      title: "Mercado Livre Pro"
-    },
-    { 
-      image: moduleImage2,
-      title: "Shopee Expert"
-    },
-    { 
-      image: moduleImage3,
-      title: "TikTok Shop Master"
-    },
-    { 
-      image: moduleImage4,
-      title: "Amazon Advanced"
-    },
-    { 
-      image: moduleImage5,
-      title: "Conteúdo & Tráfego Multicanal"
-    },
-    { 
-      image: moduleImage6,
-      title: "Escala & Automação"
-    },
-  ];
 
   const bonuses = [
     { 
@@ -632,89 +559,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Course Modules Carousel */}
-      <section className="py-16 relative overflow-visible" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
-        <div className="absolute -top-64 -right-32 w-[700px] h-[700px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none" style={{ zIndex: 0 }} aria-hidden="true" />
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            {...fadeInUp}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              O Que Você Vai Aprender
-            </h2>
-            <p className="text-xl text-gray-400">
-              Transforme-se em um especialista em e-commerce com nosso método passo a passo
-            </p>
-          </motion.div>
-
-          <div className="flex items-center justify-center gap-4 md:gap-8">
-            {/* Left Arrow */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={scrollPrev}
-              disabled={!canScrollPrev}
-              className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500/50 text-white hover:border-purple-400 hover:bg-purple-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              data-testid="button-carousel-prev"
-              aria-label="Ver módulos anteriores"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </motion.button>
-
-            {/* Carousel Container */}
-            <div className="flex-1 overflow-hidden" ref={emblaRef}>
-              <div className="flex gap-6">
-                {carouselModules.map((module, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 px-6"
-                    data-testid={`carousel-slide-${index}`}
-                  >
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="h-full"
-                    >
-                      <Card className="group relative w-full h-72 rounded-lg border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col">
-                        {/* Full Image Only */}
-                        {module.image && (
-                          <div className="relative w-full h-full overflow-hidden">
-                            <img 
-                              src={module.image} 
-                              alt={`Módulo ${module.title}`}
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                          </div>
-                        )}
-                      </Card>
-                    </motion.div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Arrow */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={scrollNext}
-              disabled={!canScrollNext}
-              className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500/50 text-white hover:border-purple-400 hover:bg-purple-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              data-testid="button-carousel-next"
-              aria-label="Ver próximos módulos"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </motion.button>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Mentors Section */}
       <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
@@ -826,69 +670,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
-
-      {/* Course Modules */}
-      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            {...fadeInUp}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Módulos do Curso
-            </h2>
-            <p className="text-xl text-gray-400">
-              Mais de 150 aulas práticas divididas em 6 módulos completos
-            </p>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {modules.map((module, index) => (
-              <motion.div
-                key={module.title}
-                variants={staggerItem}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card 
-                  className="group bg-white/5 backdrop-blur-md border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 h-full"
-                  data-testid={`card-module-${index}`}
-                >
-                  <CardContent className="p-8">
-                    <div className="mb-4 h-12 flex items-center">
-                      {module.image ? (
-                        <img 
-                          src={module.image}
-                          alt={`Logo do ${module.title}`}
-                          className="h-16 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
-                        />
-                      ) : module.icon ? (
-                        <module.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform duration-300" />
-                      ) : null}
-                    </div>
-                    <h3 className="font-heading text-2xl font-bold text-white mb-2">
-                      {module.title}
-                    </h3>
-                    <p className="text-purple-400 text-sm mb-3">
-                      {module.lessons} aulas
-                    </p>
-                    <p className="text-gray-400 leading-relaxed">
-                      {module.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
