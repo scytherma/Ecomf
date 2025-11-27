@@ -63,6 +63,7 @@ import bonusGroupsVip from "/images/bonus-groups-vip.png";
 import bonusProductsChampions from "/images/bonus-products-champions.png";
 import bonusSuppliers from "/images/bonus-suppliers.png";
 import bonusExclusiveMaterials from "/images/bonus-exclusive-materials.png";
+import bonusSuppliesPackaging from "/images/bonus-supplies-packaging.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -1031,7 +1032,7 @@ export default function Home() {
               {
                 title: "Lista de Insumos e embalagem",
                 description: "Tudo que você poderá utilizar na sua operação, desde impressoras térmicos acessíveis à plástico bolha.",
-                image: moduleImage3
+                image: bonusSuppliesPackaging
               },
               {
                 title: "Materiais Exclusivos",
