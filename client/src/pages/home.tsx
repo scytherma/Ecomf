@@ -551,7 +551,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Shopee, Mercado Livre, Amazon e TikTok Shop, domine todas de uma vez
+              Shopee, Mercado Livre, Amazon e TikTok Shop, <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 text-transparent bg-clip-text">domine todas de uma vez</span>
             </h2>
             <p className="text-xl text-gray-400">
               Passo a passo testado e validado nas 4 maiores plataformas do e-commerce
