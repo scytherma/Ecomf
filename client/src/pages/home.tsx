@@ -539,6 +539,19 @@ export default function Home() {
               </div>
             </motion.div>
 
+            {/* Right Image Placeholder */}
+            <motion.div
+              {...fadeInUp}
+              transition={{ delay: 0.2 }}
+              className="flex-1 w-full lg:w-auto"
+            >
+              <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900 flex items-center justify-center">
+                <div className="text-gray-500 text-center p-8">
+                  <div className="w-24 h-24 rounded-full bg-gray-700 mx-auto mb-4" />
+                  <p className="text-sm">Espaço para imagem</p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
