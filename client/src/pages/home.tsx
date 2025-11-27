@@ -1379,8 +1379,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
       {/* Footer */}
-      <footer className="bg-gray-950 border-t border-white/10 py-16">
+      <footer className="py-16" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
