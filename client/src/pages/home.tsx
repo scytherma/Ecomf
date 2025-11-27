@@ -1154,7 +1154,7 @@ export default function Home() {
 
       {/* Pricing Section */}
       <section className="py-12 relative overflow-hidden" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
             className="text-center mb-12"
@@ -1171,66 +1171,101 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <motion.div
-            {...fadeInUp}
-          >
-            <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
-              <CardContent className="p-12">
-                <div className="text-center mb-8">
-                  <p className="text-gray-400 text-lg mb-2">De R$ 1.997,00 por apenas</p>
-                  <div className="mb-4">
-                    <span className="text-gray-500 line-through text-3xl">R$ 1.997,00</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Benefits List */}
+            <motion.div
+              {...fadeInUp}
+            >
+              <h3 className="text-2xl font-bold text-yellow-400 mb-8">
+                Relembrado tudo que você terá direitos:
+              </h3>
+              <div className="space-y-4">
+                {[
+                  'Plataforma com +150 aulas e 50 módulos',
+                  'Suporte individual VIP',
+                  'Acesso aos Grupos VIP (WhatsApp e Telegram)',
+                  'Lista de Produtos Campeões',
+                  'Lista de Fornecedores (Nacionais e Internacionais)',
+                  'Lista de insumos e embalagens para utilizar em sua operação',
+                  'Material Exclusivo (PDFs, Mapas Mentais, Roteiros e Planilhas)'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 mt-1">
+                      <svg className="h-5 w-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-300 text-base">
+                      {item}
+                    </p>
                   </div>
-                  <div className="mb-2">
-                    <span className="text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                      R$ 397
-                    </span>
-                  </div>
-                  <p className="text-gray-300 text-xl">
-                    ou <strong className="text-white">12x de R$ 46,16</strong>
-                  </p>
-                </div>
+                ))}
+              </div>
+            </motion.div>
 
-                <div className="space-y-3 flex flex-col items-center">
-                  <a href="https://pay.cakto.com.br/trrf6yf" className="block">
+            {/* Right: Pricing Card */}
+            <motion.div
+              {...fadeInUp}
+              transition={{ delay: 0.2 }}
+            >
+              <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
+                <CardContent className="p-12">
+                  <div className="text-center mb-8">
+                    <p className="text-gray-400 text-lg mb-2">De R$ 1.997,00 por apenas</p>
+                    <div className="mb-4">
+                      <span className="text-gray-500 line-through text-3xl">R$ 1.997,00</span>
+                    </div>
+                    <div className="mb-2">
+                      <span className="text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        R$ 397
+                      </span>
+                    </div>
+                    <p className="text-gray-300 text-xl">
+                      ou <strong className="text-white">12x de R$ 46,16</strong>
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 flex flex-col items-center">
+                    <a href="https://pay.cakto.com.br/trrf6yf" className="block w-full">
+                      <Button 
+                        size="lg"
+                        className="font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow w-full"
+                        data-testid="button-cta-pricing"
+                      >
+                        <Sparkles className="mr-2 h-5 w-5" />
+                        Quero meu lugar na EcomFy
+                      </Button>
+                    </a>
+                    
                     <Button 
                       size="lg"
-                      className="font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow"
-                      data-testid="button-cta-pricing"
+                      variant="outline"
+                      className="font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600 w-full"
+                      data-testid="button-whatsapp-pricing"
                     >
-                      <Sparkles className="mr-2 h-5 w-5" />
-                      Quero meu lugar na EcomFy
+                      <MessageCircle className="mr-2 h-5 w-5" />
+                      Falar com Especialista EcomFy
                     </Button>
-                  </a>
-                  
-                  <Button 
-                    size="lg"
-                    variant="outline"
-                    className="font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600"
-                    data-testid="button-whatsapp-pricing"
-                  >
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Falar com Especialista EcomFy
-                  </Button>
-                </div>
-
-                <div className="mt-8 text-center">
-                  <p className="text-gray-400 text-sm mb-4 flex items-center justify-center gap-2">
-                    <Lock className="h-4 w-4 text-white" />
-                    Garantia EcomFy · 7 dias ou seu dinheiro de volta
-                  </p>
-                  <div className="flex justify-center items-center gap-4 text-gray-500 text-xs">
-                    <span>Aceitamos:</span>
-                    <span>Cartão de Crédito</span>
-                    <span>•</span>
-                    <span>PIX</span>
-                    <span>•</span>
-                    <span>Boleto</span>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
+
+                  <div className="mt-8 text-center">
+                    <p className="text-gray-400 text-sm mb-4 flex items-center justify-center gap-2">
+                      <Lock className="h-4 w-4 text-white" />
+                      Garantia EcomFy · 7 dias ou seu dinheiro de volta
+                    </p>
+                    <div className="flex justify-center items-center gap-4 text-gray-500 text-xs">
+                      <span>Aceitamos:</span>
+                      <span>Cartão de Crédito</span>
+                      <span>•</span>
+                      <span>PIX</span>
+                      <span>•</span>
+                      <span>Boleto</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
         </div>
       </section>
 
