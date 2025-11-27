@@ -1390,7 +1390,9 @@ export default function Home() {
               </p>
               <div className="flex gap-4">
                 <a 
-                  href="#" 
+                  href="https://linktr.ee/EcomFyof" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors"
                   data-testid="link-linktree"
                 >
