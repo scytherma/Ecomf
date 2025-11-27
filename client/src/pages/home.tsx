@@ -1056,13 +1056,13 @@ export default function Home() {
                   
                   {/* Content */}
                   <div className="absolute inset-0 flex flex-col justify-end p-6">
-                    <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                      {bonus.description}
-                    </p>
-                    
-                    <h3 className="font-heading text-xl md:text-2xl font-bold text-primary leading-tight">
+                    <h3 className="font-heading text-xl md:text-2xl font-bold text-primary leading-tight mb-3">
                       {bonus.title}
                     </h3>
+                    
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      {bonus.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
