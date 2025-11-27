@@ -490,35 +490,35 @@ export default function Home() {
               {...fadeInUp}
               className="flex-1 border-l-4 border-primary pl-8"
             >
-              <div className="text-sm font-bold text-purple-400 mb-4 tracking-wider">
+              <div className="text-sm font-bold text-primary mb-4 tracking-wider">
                 OBJETIVO
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Qual é o <span className="text-purple-400">objetivo da EcomFy</span>
+                Qual é o <span className="text-primary">objetivo da EcomFy</span>
                 <br />
-                e o <span className="text-purple-400">que você vai aprender?</span>
+                e o <span className="text-primary">que você vai aprender?</span>
               </h2>
 
               <div className="text-gray-300 text-base space-y-6">
                 <p>
-                  Um dos maiores desafios de quem quer começar ou evoluir no e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro. Foi pensando nisso que <span className="text-purple-400 font-bold">Diogo e Oliveira</span>, dois mentores que já faturaram <span className="text-purple-400 font-bold">múltiplos 7 dígitos</span> no Mercado Livre, Shopee, TikTok Shop e Amazon, criaram a <span className="text-purple-400 font-bold">EcomFy</span>.
+                  Um dos maiores desafios de quem quer começar ou evoluir no e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro. Foi pensando nisso que <span className="text-primary font-bold">Diogo e Oliveira</span>, dois mentores que já faturaram <span className="text-primary font-bold">múltiplos 7 dígitos</span> no Mercado Livre, Shopee, TikTok Shop e Amazon, criaram a <span className="text-primary font-bold">EcomFy</span>.
                 </p>
 
                 <p>
-                  A EcomFy é o <span className="text-purple-400 font-bold">treinamento mais completo e atualizado do Brasil</span> para dominar as 4 plataformas que realmente mandam no mercado hoje. O foco é <span className="text-purple-400 font-bold">te levar do absoluto zero até o nível avançado</span> com aulas práticas, diretas ao ponto e baseadas no passo a passo que nós mesmos usamos para construir e escalar nossas lojas.
+                  A EcomFy é o <span className="text-primary font-bold">treinamento mais completo e atualizado do Brasil</span> para dominar as 4 plataformas que realmente mandam no mercado hoje. O foco é <span className="text-primary font-bold">te levar do absoluto zero até o nível avançado</span> com aulas práticas, diretas ao ponto e baseadas no passo a passo que nós mesmos usamos para construir e escalar nossas lojas.
                 </p>
 
                 <p>
-                  Você vai aprender a <span className="text-purple-400 font-bold">encontrar produtos vencedores, criar anúncios que convertem de verdade, dominar tráfego pago e orgânico, precificar com margem alta, gerenciar estoque e logística e escalar suas vendas de forma sustentável</span>.
+                  Você vai aprender a <span className="text-primary font-bold">encontrar produtos vencedores, criar anúncios que convertem de verdade, dominar tráfego pago e orgânico, precificar com margem alta, gerenciar estoque e logística e escalar suas vendas de forma sustentável</span>.
                 </p>
 
                 <p>
-                  Serve tanto para <span className="text-purple-400 font-bold">quem nunca vendeu nada online</span> e quer começar do jeito certo, quanto para quem já tem loja e precisa <span className="text-purple-400 font-bold">explodir o faturamento em 2025</span>. Tudo isso com potencial de virar sua <span className="text-purple-400 font-bold">principal fonte de renda</span> ou a evolução real do seu negócio atual.
+                  Serve tanto para <span className="text-primary font-bold">quem nunca vendeu nada online</span> e quer começar do jeito certo, quanto para quem já tem loja e precisa <span className="text-primary font-bold">explodir o faturamento em 2025</span>. Tudo isso com potencial de virar sua <span className="text-primary font-bold">principal fonte de renda</span> ou a evolução real do seu negócio atual.
                 </p>
 
                 <p>
-                  Mais do que vender coisinhas na internet, na EcomFy você <span className="text-purple-400 font-bold">constrói um negócio sólido, previsível e altamente lucrativo</span>.
+                  Mais do que vender coisinhas na internet, na EcomFy você <span className="text-primary font-bold">constrói um negócio sólido, previsível e altamente lucrativo</span>.
                 </p>
               </div>
             </motion.div>
