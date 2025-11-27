@@ -1159,11 +1159,6 @@ export default function Home() {
             {...fadeInUp}
             className="mb-16 text-center"
           >
-            <Badge className="mb-8 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow mx-auto flex w-fit">
-              <Clock className="w-4 h-4 mr-2" />
-              Valor atual só até 31/12
-            </Badge>
-            
             <div className="mb-6">
               <Badge className="px-4 py-2 text-xs font-bold bg-primary/20 text-primary border border-primary">
                 INVESTIMENTO
