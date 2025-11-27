@@ -18,9 +18,6 @@ import {
   Zap,
   Target,
   MessageCircle,
-  Instagram,
-  Facebook,
-  Youtube,
   Mail,
   Phone,
   Loader2,
@@ -30,7 +27,7 @@ import {
   Rocket,
   Globe,
 } from "lucide-react";
-import { SiShopee, SiAmazon, SiTiktok, SiWhatsapp } from "react-icons/si";
+import { SiShopee, SiAmazon, SiTiktok, SiWhatsapp, SiLinktree } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -1395,23 +1392,9 @@ export default function Home() {
                 <a 
                   href="#" 
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors"
-                  data-testid="link-instagram"
+                  data-testid="link-linktree"
                 >
-                  <Instagram className="w-5 h-5 text-white" />
-                </a>
-                <a 
-                  href="#" 
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors"
-                  data-testid="link-facebook"
-                >
-                  <Facebook className="w-5 h-5 text-white" />
-                </a>
-                <a 
-                  href="#" 
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors"
-                  data-testid="link-youtube"
-                >
-                  <Youtube className="w-5 h-5 text-white" />
+                  <SiLinktree className="w-5 h-5 text-white" />
                 </a>
               </div>
             </div>
