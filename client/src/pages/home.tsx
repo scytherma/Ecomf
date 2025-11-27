@@ -1157,18 +1157,29 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-12"
+            className="mb-16"
           >
-            <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
-              <Clock className="w-4 h-4 mr-2" />
-              Valor atual só até 31/12
-            </Badge>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Garanta Sua Vaga Agora
-            </h2>
-            <p className="text-xl text-gray-400">
-              Oferta especial por tempo limitado
-            </p>
+            <div className="flex items-start gap-4 mb-12 border-l-4 border-primary pl-6">
+              <div>
+                <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">ÚLTIMA CHANCE</p>
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent leading-tight">
+                  Agora que viu tudo que vai receber, quanto acha que isso custaria?
+                </h2>
+              </div>
+            </div>
+
+            <div className="text-center mb-8">
+              <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
+                <Clock className="w-4 h-4 mr-2" />
+                Valor atual só até 31/12
+              </Badge>
+              <h3 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+                Garanta Sua Vaga Agora
+              </h3>
+              <p className="text-xl text-gray-400">
+                Oferta especial por tempo limitado
+              </p>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
