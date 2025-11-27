@@ -1055,14 +1055,14 @@ export default function Home() {
                   <div className="absolute inset-0 bg-black/70 group-hover:bg-black/60 transition-all duration-300" />
                   
                   {/* Content */}
-                  <div className="absolute inset-0 flex flex-col justify-between p-6">
+                  <div className="absolute inset-0 flex flex-col justify-end p-6">
+                    <p className="text-gray-300 text-sm leading-relaxed mb-3">
+                      {bonus.description}
+                    </p>
+                    
                     <h3 className="font-heading text-xl md:text-2xl font-bold text-primary leading-tight">
                       {bonus.title}
                     </h3>
-                    
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {bonus.description}
-                    </p>
                   </div>
                 </div>
               </motion.div>
