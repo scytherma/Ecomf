@@ -1338,7 +1338,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <img src={ecomfyLogo} alt="EcomFy" className="h-20 w-20 object-contain" />
+                <img src={ecomfyLogo} alt="EcomFy" className="h-32 w-32 object-contain" />
               </motion.div>
             </motion.div>
 
