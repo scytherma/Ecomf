@@ -977,66 +977,6 @@ export default function Home() {
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
-      {/* Exclusive Bonuses */}
-      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            {...fadeInUp}
-            className="text-center mb-16"
-          >
-            <Badge className="mb-8 px-6 py-2 text-sm font-semibold bg-primary animate-pulse-glow">
-              <Gift className="w-4 h-4 mr-2" />
-              Bônus Exclusivos
-            </Badge>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Receba Bônus Exclusivos
-            </h2>
-            <p className="text-xl text-gray-400">
-              Ao entrar para EcomFy hoje, você levará gratuitamente benefícios Exclusivos
-            </p>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {bonuses.map((bonus, index) => (
-              <motion.div
-                key={bonus.title}
-                variants={staggerItem}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card 
-                  className="group bg-white/5 backdrop-blur-md border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 h-full relative overflow-hidden"
-                  data-testid={`card-bonus-${index}`}
-                >
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" aria-hidden="true" />
-                  
-                  <CardContent className="p-8 relative z-10">
-                    <Gift className="w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                    <h3 className="font-heading text-2xl font-bold text-white mb-3">
-                      {bonus.title}
-                    </h3>
-                    <p className="text-purple-400 text-xl font-bold mb-4">
-                      Valor: {bonus.value}
-                    </p>
-                    <p className="text-gray-300 leading-relaxed">
-                      {bonus.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
-
       {/* Testimonials */}
       <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
