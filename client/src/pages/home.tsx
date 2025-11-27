@@ -1456,11 +1456,18 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-gray-400">
                   <Phone className="w-5 h-5 text-purple-400" />
-                  (11) 99999-9999
+                  (11) 9488-89811
                 </li>
-                <li className="flex items-center gap-3 text-gray-400">
-                  <MessageCircle className="w-5 h-5 text-purple-400" />
-                  WhatsApp Business
+                <li>
+                  <a 
+                    href="https://wa.me/5511948889811?text=Oi%2C%20vim%20do%20site!%20Estou%20quase%20decidindo%20entrar%20na%20EcomFy%2C%20mas%20queria%20tirar%20uma%20d%C3%BAvida%20r%C3%A1pida%20antes%20de%20garantir%20minha%20vaga" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-gray-400 hover:text-purple-400 transition-colors"
+                  >
+                    <MessageCircle className="w-5 h-5 text-purple-400" />
+                    WhatsApp Business
+                  </a>
                 </li>
               </ul>
             </div>
