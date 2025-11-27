@@ -357,12 +357,6 @@ export default function Home() {
       image: testimonialMan,
       text: "O Oliveira é o cara que mais me ajudou a destravar. As estratégias que ele passa no grupo de mentorados e nas calls ao vivo fizeram minha operação virar outra. Hoje rodo R$ 50 mil/mês com consistência e margem alta."
     },
-    {
-      name: "Amanda Costa",
-      result: "R$ 28.000/mês",
-      image: testimonialWoman,
-      text: "Larguei meu emprego CLT e hoje tenho liberdade financeira e de tempo com o e-commerce."
-    },
   ];
 
   const faqs = [
