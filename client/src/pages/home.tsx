@@ -495,9 +495,9 @@ export default function Home() {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Qual é o <span className="text-primary">objetivo da EcomFy</span>
+                <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
                 <br />
-                e o <span className="text-primary">que você vai aprender?</span>
+                <span className="text-white">e o</span> <span className="text-primary">que você vai aprender?</span>
               </h2>
 
               <div className="text-gray-300 text-base space-y-6">
