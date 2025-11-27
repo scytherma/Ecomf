@@ -60,6 +60,7 @@ import testimonialAngelo from "/images/testimonial-angelo.jpg";
 import testimonialHugo from "/images/testimonial-hugo.jpg";
 import bonusSupportVip from "/images/bonus-support-vip.png";
 import bonusGroupsVip from "/images/bonus-groups-vip.png";
+import bonusProductsChampions from "/images/bonus-products-champions.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -1018,7 +1019,7 @@ export default function Home() {
               {
                 title: "Lista de Produtos Campeões",
                 description: "Acesso a 100+ produtos de alta demanda à bolsa concorrência prontos para vender.",
-                image: moduleImage1
+                image: bonusProductsChampions
               },
               {
                 title: "Lista de Fornecedores",
