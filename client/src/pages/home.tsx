@@ -1279,41 +1279,94 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            {...fadeInUp}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Perguntas Frequentes
-            </h2>
-            <p className="text-xl text-gray-400">
-              Tire suas dúvidas sobre o curso
-            </p>
-          </motion.div>
+      <section className="py-24" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Left Column */}
+            <motion.div
+              {...fadeInUp}
+              className="flex flex-col items-start"
+            >
+              {/* Logo/Title */}
+              <div className="mb-12">
+                <h2 className="font-heading text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-2">
+                  FAQ
+                </h2>
+                <p className="text-gray-400 text-sm">Perguntas frequentes</p>
+              </div>
 
-          <motion.div
-            {...fadeInUp}
-          >
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`item-${index}`}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 data-[state=open]:border-purple-500/50"
-                  data-testid={`faq-item-${index}`}
-                >
-                  <AccordionTrigger className="text-left text-white hover:text-purple-400 text-lg font-semibold py-6">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-300 text-base leading-relaxed pb-6">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </motion.div>
+              {/* Subtitle */}
+              <h3 className="text-2xl font-bold mb-8">
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
+                  Ainda com dúvida?
+                </span>
+              </h3>
+
+              {/* WhatsApp Box */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 mb-12 w-full max-w-xs"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="bg-green-500/20 p-4 rounded-full flex-shrink-0">
+                    <SiWhatsapp className="h-6 w-6 text-green-400" />
+                  </div>
+                  <div>
+                    <p className="text-green-400 font-semibold text-sm">Atendimento por WhatsApp</p>
+                    <p className="text-gray-300 text-xs mt-1">CLIQUE PARA FALAR</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Logo Badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-full p-4 w-fit"
+              >
+                <img src={ecomfyLogo} alt="EcomFy" className="h-12 w-12 object-contain" />
+              </motion.div>
+            </motion.div>
+
+            {/* Right Column - FAQ Accordion */}
+            <motion.div
+              initial="initial"
+              whileInView="whileInView"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="lg:col-span-2"
+            >
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <motion.div
+                    key={index}
+                    variants={staggerItem}
+                  >
+                    <AccordionItem 
+                      value={`item-${index}`}
+                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg px-6 data-[state=open]:border-purple-500/50 data-[state=open]:bg-white/10"
+                      data-testid={`faq-item-${index}`}
+                    >
+                      <AccordionTrigger className="text-left text-white hover:text-purple-400 text-base font-semibold py-5 group">
+                        <span className="flex items-center gap-3">
+                          <span className="text-primary text-lg group-hover:text-purple-300">+</span>
+                          {faq.question}
+                        </span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-gray-300 text-sm leading-relaxed pb-5 pl-8">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                ))}
+              </Accordion>
+            </motion.div>
+          </div>
         </div>
       </section>
 
