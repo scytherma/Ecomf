@@ -1175,8 +1175,8 @@ export default function Home() {
             <motion.div
               {...fadeInUp}
             >
-              <h3 className="text-2xl font-bold text-yellow-400 mb-8">
-                Relembrado tudo que você terá direitos:
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-8">
+                Relembrado tudo que você terá direito:
               </h3>
               <div className="space-y-4">
                 {[
