@@ -64,6 +64,7 @@ import bonusProductsChampions from "/images/bonus-products-champions.png";
 import bonusSuppliers from "/images/bonus-suppliers.png";
 import bonusExclusiveMaterials from "/images/bonus-exclusive-materials.png";
 import bonusSuppliesPackaging from "/images/bonus-supplies-packaging.png";
+import objectiveSectionBg from "/images/objective-section-bg.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -488,8 +489,17 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent" aria-hidden="true" />
 
       {/* About EcomFy Section */}
-      <section className="py-20" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="py-20 relative overflow-hidden" 
+        style={{
+          backgroundImage: `url(${objectiveSectionBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundColor: 'rgb(5, 4, 8)'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Left Content with Border */}
             <motion.div
@@ -529,19 +539,6 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Right Image Placeholder */}
-            <motion.div
-              {...fadeInUp}
-              transition={{ delay: 0.2 }}
-              className="flex-1 w-full lg:w-auto"
-            >
-              <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900 flex items-center justify-center">
-                <div className="text-gray-500 text-center p-8">
-                  <div className="w-24 h-24 rounded-full bg-gray-700 mx-auto mb-4" />
-                  <p className="text-sm">Espaço para imagem</p>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
