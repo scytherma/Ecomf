@@ -471,15 +471,17 @@ export default function Home() {
                 </Button>
               </a>
               
-              <Button 
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
-                data-testid="button-whatsapp-hero"
-              >
-                <SiWhatsapp className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
-                Tirar dúvidas
-              </Button>
+              <a href="https://wa.me/5511948889811?text=Oi%2C%20vim%20do%20site!%20Estou%20quase%20decidindo%20entrar%20na%20EcomFy%2C%20mas%20queria%20tirar%20uma%20d%C3%BAvida%20r%C3%A1pida%20antes%20de%20garantir%20minha%20vaga" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
+                  data-testid="button-whatsapp-hero"
+                >
+                  <SiWhatsapp className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
+                  Tirar dúvidas
+                </Button>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -1246,15 +1248,17 @@ export default function Home() {
                       </Button>
                     </a>
                     
-                    <Button 
-                      size="lg"
-                      variant="outline"
-                      className="font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600 w-full"
-                      data-testid="button-whatsapp-pricing"
-                    >
-                      <MessageCircle className="mr-2 h-5 w-5" />
-                      Falar com Especialista EcomFy
-                    </Button>
+                    <a href="https://wa.me/5511948889811?text=Oi%2C%20vim%20do%20site!%20Estou%20quase%20decidindo%20entrar%20na%20EcomFy%2C%20mas%20queria%20tirar%20uma%20d%C3%BAvida%20r%C3%A1pida%20antes%20de%20garantir%20minha%20vaga" target="_blank" rel="noopener noreferrer" className="block w-full">
+                      <Button 
+                        size="lg"
+                        variant="outline"
+                        className="font-semibold bg-green-600 hover:bg-green-700 text-white border-green-600 w-full"
+                        data-testid="button-whatsapp-pricing"
+                      >
+                        <MessageCircle className="mr-2 h-5 w-5" />
+                        Falar com Especialista EcomFy
+                      </Button>
+                    </a>
                   </div>
 
                   <div className="mt-8 text-center">
@@ -1303,23 +1307,29 @@ export default function Home() {
               </h3>
 
               {/* WhatsApp Box */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 mb-12 w-full max-w-xs"
+              <a 
+                href="https://wa.me/5511948889811?text=Oi%2C%20vim%20do%20site!%20Estou%20quase%20decidindo%20entrar%20na%20EcomFy%2C%20mas%20queria%20tirar%20uma%20d%C3%BAvida%20r%C3%A1pida%20antes%20de%20garantir%20minha%20vaga"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="flex items-center gap-4">
-                  <div className="bg-green-500/20 p-4 rounded-full flex-shrink-0">
-                    <SiWhatsapp className="h-6 w-6 text-green-400" />
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 mb-12 w-full max-w-xs hover:border-green-500/50 transition-colors cursor-pointer"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="bg-green-500/20 p-4 rounded-full flex-shrink-0">
+                      <SiWhatsapp className="h-6 w-6 text-green-400" />
+                    </div>
+                    <div>
+                      <p className="text-green-400 font-semibold text-sm">Atendimento por WhatsApp</p>
+                      <p className="text-gray-300 text-xs mt-1">CLIQUE PARA FALAR</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-green-400 font-semibold text-sm">Atendimento por WhatsApp</p>
-                    <p className="text-gray-300 text-xs mt-1">CLIQUE PARA FALAR</p>
-                  </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </a>
 
               {/* Logo Badge */}
               <motion.div
