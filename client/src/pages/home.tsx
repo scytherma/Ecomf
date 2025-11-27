@@ -1327,9 +1327,8 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-full p-4 w-fit"
               >
-                <img src={ecomfyLogo} alt="EcomFy" className="h-12 w-12 object-contain" />
+                <img src={ecomfyLogo} alt="EcomFy" className="h-20 w-20 object-contain" />
               </motion.div>
             </motion.div>
 
