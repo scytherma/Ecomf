@@ -56,6 +56,7 @@ import dashboardImage from "@assets/generated_images/E-commerce_sales_dashboard_
 import learningImage from "@assets/generated_images/e-commerce_mastery_learning_journey_illustration.png";
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
+import testimonialAngelo from "/images/testimonial-angelo.jpg";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -338,10 +339,10 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Juliana Santos",
+      name: "Ângelo",
       result: "R$ 45.000/mês",
-      image: testimonialWoman,
-      text: "Em 3 meses consegui atingir R$ 45 mil de faturamento mensal. Os mentores são incríveis!"
+      image: testimonialAngelo,
+      text: "Só acompanhando as lives do Diogo e trocando algumas mensagens já bati R$ 45 mil por mês na Shopee. Saí do zero, hoje vivo disso."
     },
     {
       name: "Carlos Eduardo",
