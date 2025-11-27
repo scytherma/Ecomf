@@ -492,6 +492,7 @@ export default function Home() {
 
       {/* About EcomFy Section */}
       <section 
+        id="objetivo"
         className="py-20 relative overflow-hidden" 
         style={{
           backgroundImage: `url(${objectiveSectionBg})`,
@@ -1088,7 +1089,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Testimonials */}
-      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
+      <section id="depoimentos" className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeInUp}
@@ -1283,7 +1284,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
+      <section id="faq" className="py-24" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Left Column */}
@@ -1419,17 +1420,17 @@ export default function Home() {
               <h4 className="font-semibold text-white mb-4">Links Rápidos</h4>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                  <a href="#objetivo" className="text-gray-400 hover:text-purple-400 transition-colors">
                     Sobre o Curso
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                  <a href="#depoimentos" className="text-gray-400 hover:text-purple-400 transition-colors">
                     Depoimentos
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                  <a href="#faq" className="text-gray-400 hover:text-purple-400 transition-colors">
                     FAQ
                   </a>
                 </li>
