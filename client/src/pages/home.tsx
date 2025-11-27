@@ -58,6 +58,7 @@ import testimonialWoman from "@assets/generated_images/Student_testimonial_portr
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
 import testimonialAngelo from "/images/testimonial-angelo.jpg";
 import testimonialHugo from "/images/testimonial-hugo.jpg";
+import bonusSupportVip from "/images/bonus-support-vip.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -1006,7 +1007,7 @@ export default function Home() {
               {
                 title: "Suporte Individual VIP",
                 description: "Acesso direto a um e a minha equipe e através de um número exclusivo WhatsApp com devoluções e é qual em cada etapa do seu jornada no Eco Drop sempre que precisar.",
-                image: dashboardImage
+                image: bonusSupportVip
               },
               {
                 title: "Grupos de Alunos VIP",
