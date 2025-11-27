@@ -977,73 +977,6 @@ export default function Home() {
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
-      {/* Testimonials */}
-      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            {...fadeInUp}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Resultados Reais dos Nossos Alunos
-            </h2>
-            <p className="text-xl text-gray-400 mb-8">
-              Mais de R$ 50 milhões em faturamento gerado
-            </p>
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full">
-              <TrendingUp className="w-6 h-6 text-white" />
-              <span className="text-white text-2xl font-bold">R$ 50M+ em Vendas</span>
-            </div>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.name}
-                variants={staggerItem}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card 
-                  className="bg-white/5 backdrop-blur-md border-white/10 hover:scale-105 transition-all duration-300 h-full"
-                  data-testid={`card-testimonial-${index}`}
-                >
-                  <CardContent className="p-8">
-                    <div className="flex items-center gap-4 mb-6">
-                      <img 
-                        src={testimonial.image} 
-                        alt={`Foto de ${testimonial.name}, aluno(a) que alcançou ${testimonial.result}`}
-                        className="w-16 h-16 rounded-full object-cover border-2 border-purple-500"
-                      />
-                      <div>
-                        <h4 className="font-bold text-white text-lg">{testimonial.name}</h4>
-                        <p className="text-primary font-semibold">{testimonial.result}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                    <p className="text-gray-300 leading-relaxed italic">
-                      "{testimonial.text}"
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
-
       {/* Exclusive Bonuses Section */}
       <section className="py-20" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1132,6 +1065,73 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
+      {/* Testimonials */}
+      <section className="py-12" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+              Resultados Reais dos Nossos Alunos
+            </h2>
+            <p className="text-xl text-gray-400 mb-8">
+              Mais de R$ 50 milhões em faturamento gerado
+            </p>
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full">
+              <TrendingUp className="w-6 h-6 text-white" />
+              <span className="text-white text-2xl font-bold">R$ 50M+ em Vendas</span>
+            </div>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.name}
+                variants={staggerItem}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card 
+                  className="bg-white/5 backdrop-blur-md border-white/10 hover:scale-105 transition-all duration-300 h-full"
+                  data-testid={`card-testimonial-${index}`}
+                >
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <img 
+                        src={testimonial.image} 
+                        alt={`Foto de ${testimonial.name}, aluno(a) que alcançou ${testimonial.result}`}
+                        className="w-16 h-16 rounded-full object-cover border-2 border-purple-500"
+                      />
+                      <div>
+                        <h4 className="font-bold text-white text-lg">{testimonial.name}</h4>
+                        <p className="text-primary font-semibold">{testimonial.result}</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-gray-300 leading-relaxed italic">
+                      "{testimonial.text}"
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
