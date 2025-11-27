@@ -57,6 +57,7 @@ import learningImage from "@assets/generated_images/e-commerce_mastery_learning_
 import testimonialWoman from "@assets/generated_images/Student_testimonial_portrait_woman_f0a043ed.png";
 import testimonialMan from "@assets/generated_images/Student_testimonial_portrait_man_ee5ff9bd.png";
 import testimonialAngelo from "/images/testimonial-angelo.jpg";
+import testimonialHugo from "/images/testimonial-hugo.jpg";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -345,10 +346,10 @@ export default function Home() {
       text: "Só acompanhando as lives do Diogo e trocando algumas mensagens já bati R$ 45 mil por mês na Shopee. Saí do zero, hoje vivo disso."
     },
     {
-      name: "Carlos Eduardo",
-      result: "R$ 82.000/mês",
-      image: testimonialMan,
-      text: "Sai do zero e hoje faturo mais de R$ 80 mil por mês. Melhor investimento que já fiz!"
+      name: "Hugo",
+      result: "R$ 90.000/mês",
+      image: testimonialHugo,
+      text: "O Oliveira e o Diogo me ajudaram muito nas lives e nas mensagens. As estratégias que eles passaram foram essenciais pra eu escalar. Hoje bato R$ 90 mil/mês e sigo firme rumo aos 6 dígitos."
     },
     {
       name: "Amanda Costa",
