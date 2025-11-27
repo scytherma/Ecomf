@@ -59,6 +59,7 @@ import testimonialMan from "@assets/generated_images/Student_testimonial_portrai
 import testimonialAngelo from "/images/testimonial-angelo.jpg";
 import testimonialHugo from "/images/testimonial-hugo.jpg";
 import bonusSupportVip from "/images/bonus-support-vip.png";
+import bonusGroupsVip from "/images/bonus-groups-vip.png";
 import mercadoLivreLogo from "@assets/ml roc_1763860918953.png";
 import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercadolibre-inc_1763877352782.png";
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
@@ -1012,7 +1013,7 @@ export default function Home() {
               {
                 title: "Grupos de Alunos VIP",
                 description: "Acesso exclusivo a grupos no WhatsApp e Telegram para trocar networking com outros alunos, obter novas estratégias e receber suporte direto com especialistas.",
-                image: learningImage
+                image: bonusGroupsVip
               },
               {
                 title: "Lista de Produtos Campeões",
