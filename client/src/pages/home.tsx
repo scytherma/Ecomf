@@ -1104,6 +1104,103 @@ export default function Home() {
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
+      {/* Exclusive Bonuses Section */}
+      <section className="py-20" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <Badge className="mb-4 px-6 py-2 text-sm font-semibold bg-primary/20 border border-primary text-primary">
+              BÔNUS
+            </Badge>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
+              E para garantir que você tenha <br className="hidden md:block" />
+              <span className="text-white">tudo o que precisa, </span><span className="text-primary">separamos</span>
+              <br />
+              <span className="text-white">alguns </span><span className="text-primary">bônus exclusivos!</span>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
+            {[
+              {
+                title: "Suporte Individual VIP",
+                description: "Acesso direto a um e a minha equipe e através de um número exclusivo WhatsApp com devoluções e é qual em cada etapa do seu jornada no Eco Drop sempre que precisar.",
+                image: dashboardImage
+              },
+              {
+                title: "Grupos de Alunos VIP",
+                description: "Acesso exclusivo a grupos no WhatsApp e Telegram para trocar networking com outros alunos, obter novas estratégias e receber suporte direto com especialistas.",
+                image: learningImage
+              },
+              {
+                title: "Lista de Produtos Campeões",
+                description: "Acesso a 100+ produtos de alta demanda à bolsa concorrência prontos para vender.",
+                image: moduleImage1
+              },
+              {
+                title: "Lista de Fornecedores",
+                description: "Mais de 100 fornecedores, importadores e distribuidores nacionais e internacionais.",
+                image: moduleImage2
+              },
+              {
+                title: "Lista de Insumos e embalagem",
+                description: "Tudo que você poderá utilizar na sua operação, desde impressoras térmicos acessíveis à plástico bolha.",
+                image: moduleImage3
+              },
+              {
+                title: "Materiais Exclusivos",
+                description: "Tenho acesso a PDFs, Mapas Mentais, Roteiros de Aulas e Planilhas para otimizar seus resultados.",
+                image: moduleImage4
+              }
+            ].map((bonus, index) => (
+              <motion.div
+                key={index}
+                variants={staggerItem}
+                transition={{ delay: index * 0.1 }}
+                className="h-full"
+              >
+                <div 
+                  className="group relative h-80 rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300"
+                  data-testid={`card-bonus-${index}`}
+                >
+                  {/* Background Image */}
+                  <img 
+                    src={bonus.image}
+                    alt={bonus.title}
+                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                  
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-black/70 group-hover:bg-black/60 transition-all duration-300" />
+                  
+                  {/* Content */}
+                  <div className="absolute inset-0 flex flex-col justify-between p-6">
+                    <h3 className="font-heading text-xl md:text-2xl font-bold text-primary leading-tight">
+                      {bonus.title}
+                    </h3>
+                    
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      {bonus.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
+
       {/* Pricing Section */}
       <section className="py-12 relative overflow-hidden" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
