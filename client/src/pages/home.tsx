@@ -352,6 +352,12 @@ export default function Home() {
       text: "O Oliveira e o Diogo me ajudaram muito nas lives e nas mensagens. As estratégias que eles passaram foram essenciais pra eu escalar. Hoje bato R$ 90 mil/mês e sigo firme rumo aos 6 dígitos."
     },
     {
+      name: "Vinicius",
+      result: "R$ 50.000/mês",
+      image: testimonialMan,
+      text: "O Oliveira é o cara que mais me ajudou a destravar. As estratégias que ele passa no grupo de mentorados e nas calls ao vivo fizeram minha operação virar outra. Hoje rodo R$ 50 mil/mês com consistência e margem alta."
+    },
+    {
       name: "Amanda Costa",
       result: "R$ 28.000/mês",
       image: testimonialWoman,
