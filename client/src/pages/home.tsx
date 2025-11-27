@@ -1173,11 +1173,17 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Benefits List */}
             <motion.div
-              {...fadeInUp}
+              initial="initial"
+              whileInView="whileInView"
+              viewport={{ once: true }}
+              variants={staggerContainer}
             >
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-8">
+              <motion.h3 
+                variants={staggerItem}
+                className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-8"
+              >
                 Relembrado tudo que você terá direito:
-              </h3>
+              </motion.h3>
               <div className="space-y-4">
                 {[
                   'Plataforma com +150 aulas e 50 módulos',
@@ -1188,7 +1194,11 @@ export default function Home() {
                   'Lista de insumos e embalagens para utilizar em sua operação',
                   'Material Exclusivo (PDFs, Mapas Mentais, Roteiros e Planilhas)'
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                  <motion.div 
+                    key={index} 
+                    variants={staggerItem}
+                    className="flex items-start gap-3"
+                  >
                     <div className="flex-shrink-0 mt-1">
                       <svg className="h-5 w-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -1197,7 +1207,7 @@ export default function Home() {
                     <p className="text-gray-300 text-base">
                       {item}
                     </p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
