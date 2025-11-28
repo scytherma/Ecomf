@@ -1279,7 +1279,7 @@ export default function Home() {
             {/* Left Column */}
             <motion.div
               {...fadeInUp}
-              className="flex flex-col items-start"
+              className="flex flex-col items-center lg:items-start"
             >
               {/* Logo/Title */}
               <div className="mb-12">
