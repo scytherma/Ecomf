@@ -113,10 +113,13 @@ export default {
         },
         "pulse-light-emit": {
           "0%": { 
-            boxShadow: "0 0 0px rgba(168, 85, 247, 0.8)",
+            boxShadow: "0 0 0px rgba(168, 85, 247, 0)",
           },
-          "50%": { 
-            boxShadow: "0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(168, 85, 247, 0.3)",
+          "2%": { 
+            boxShadow: "0 0 40px rgba(168, 85, 247, 1), 0 0 80px rgba(168, 85, 247, 0.6)",
+          },
+          "10%": { 
+            boxShadow: "0 0 0px rgba(168, 85, 247, 0)",
           },
           "100%": { 
             boxShadow: "0 0 0px rgba(168, 85, 247, 0)",
