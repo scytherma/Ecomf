@@ -111,6 +111,20 @@ export default {
             transform: "scale(1)",
           },
         },
+        "pulse-slow": {
+          "0%, 90%": { 
+            boxShadow: "0 0 20px rgba(168, 85, 247, 0.2)",
+            transform: "scale(1)",
+          },
+          "95%": { 
+            boxShadow: "0 0 40px rgba(168, 85, 247, 0.8)",
+            transform: "scale(1.02)",
+          },
+          "100%": { 
+            boxShadow: "0 0 20px rgba(168, 85, 247, 0.2)",
+            transform: "scale(1)",
+          },
+        },
         "float": {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
@@ -144,6 +158,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-glow": "pulse-glow 60s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 5s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
         "gradient-shift": "gradient-shift 8s ease infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
