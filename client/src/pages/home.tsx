@@ -457,7 +457,7 @@ export default function Home() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundColor: 'rgb(5, 4, 8)',
-          aspectRatio: '800 / 2100'
+          aspectRatio: '800 / 2800'
         }}
       >
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
