@@ -474,8 +474,6 @@ export default function Home() {
 
               <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                 <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
-                <br />
-                <span className="text-white">e o</span> <span className="text-primary">que você vai aprender?</span>
               </h2>
 
               <div className="text-gray-300 text-sm space-y-5">
@@ -538,8 +536,6 @@ export default function Home() {
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
-                <br />
-                <span className="text-white">e o</span> <span className="text-primary">que você vai aprender?</span>
               </h2>
 
               <div className="text-gray-300 text-base space-y-6">
