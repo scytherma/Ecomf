@@ -1121,7 +1121,7 @@ export default function Home() {
               <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
                 <CardContent className="p-12">
                   <div className="text-center mb-8">
-                    <p className="text-gray-400 text-sm mb-4">de R$ 1.997,00 por apenas</p>
+                    <p className="text-gray-400 text-sm mb-4">de R$ 497 por apenas</p>
                     <div className="mb-6 flex items-baseline justify-center gap-2">
                       <span className="text-sm text-gray-300">12x</span>
                       <span className="text-6xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
