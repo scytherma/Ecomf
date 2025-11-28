@@ -451,7 +451,7 @@ export default function Home() {
       {/* About EcomFy Section - Mobile */}
       <section 
         id="objetivo"
-        className="md:hidden py-20 relative overflow-hidden" 
+        className="md:hidden relative overflow-hidden" 
         style={{
           backgroundImage: `url(/images/objetivo-mobile.png)`,
           backgroundSize: 'cover',
@@ -461,24 +461,24 @@ export default function Home() {
         }}
       >
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-8 items-center justify-start h-full">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col justify-center">
+          <div className="flex flex-col lg:flex-row gap-4 items-center justify-start">
             {/* Left Content with Border */}
             <motion.div
               {...fadeInUp}
-              className="w-full lg:w-2/3 border-l-4 border-primary pl-8"
+              className="w-full lg:w-2/3 border-l-4 border-primary pl-6"
             >
-              <div className="text-sm font-bold text-primary mb-4 tracking-wider">
+              <div className="text-xs font-bold text-primary mb-2 tracking-wider">
                 OBJETIVO
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              <h2 className="text-2xl md:text-5xl font-bold mb-4 leading-tight">
                 <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
                 <br />
                 <span className="text-white">e o</span> <span className="text-primary">que você vai aprender?</span>
               </h2>
 
-              <div className="text-gray-300 text-base space-y-6">
+              <div className="text-gray-300 text-xs space-y-3">
                 <p>
                   Um dos maiores desafios de quem quer começar ou evoluir no e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro. Foi pensando nisso que <span className="text-primary font-bold">Diogo e Oliveira</span>, dois mentores que já faturaram <span className="text-primary font-bold">múltiplos 7 dígitos</span> no Mercado Livre, Shopee, TikTok Shop e Amazon, criaram a <span className="text-primary font-bold">EcomFy</span>.
                 </p>
