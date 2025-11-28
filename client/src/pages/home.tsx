@@ -1083,7 +1083,7 @@ export default function Home() {
             </p>
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full">
               <TrendingUp className="w-6 h-6 text-white" />
-              <span className="text-white text-2xl font-bold">R$ 50M+ em Vendas</span>
+              <span className="text-white text-2xl font-bold">R$ 350K+ em Vendas</span>
             </div>
           </motion.div>
 
