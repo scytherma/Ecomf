@@ -456,7 +456,8 @@ export default function Home() {
           backgroundImage: `url(/images/objetivo-mobile.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundColor: 'rgb(5, 4, 8)'
+          backgroundColor: 'rgb(5, 4, 8)',
+          aspectRatio: '800 / 1885'
         }}
       >
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
