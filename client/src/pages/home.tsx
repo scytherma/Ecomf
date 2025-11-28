@@ -473,7 +473,7 @@ export default function Home() {
               </div>
 
               <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
+                <span className="text-white">Qual é o objetivo da</span> <span className="text-primary">EcomFy?</span>
               </h2>
 
               <div className="text-gray-300 text-sm space-y-5">
@@ -535,7 +535,7 @@ export default function Home() {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
+                <span className="text-white">Qual é o objetivo da</span> <span className="text-primary">EcomFy?</span>
               </h2>
 
               <div className="text-gray-300 text-base space-y-6">
