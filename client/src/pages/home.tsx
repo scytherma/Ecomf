@@ -1213,8 +1213,8 @@ export default function Home() {
                     </div>
                     <p className="text-gray-400 text-sm mb-4">de R$ 497 por apenas</p>
                     <div className="mb-6 flex items-baseline justify-center gap-2">
-                      <span className="text-sm text-gray-300">12x</span>
-                      <span className="text-6xl font-black bg-gradient-to-r from-[#c898ff] to-[#7c2eff] bg-clip-text text-transparent">
+                      <span className="text-xs md:text-sm text-gray-300">12x</span>
+                      <span className="text-3xl md:text-6xl font-black bg-gradient-to-r from-[#c898ff] to-[#7c2eff] bg-clip-text text-transparent">
                         R$ 46,16
                       </span>
                     </div>
