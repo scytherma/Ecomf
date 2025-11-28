@@ -1201,7 +1201,7 @@ export default function Home() {
             >
               {/* Logo/Title */}
               <div className="mb-12">
-                <h2 className="font-heading text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-2">
+                <h2 className="font-heading text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-0">
                   FAQ
                 </h2>
                 <p className="text-gray-400 text-sm">Perguntas frequentes</p>
