@@ -373,10 +373,10 @@ export default function Home() {
           >
             <h1 className="font-bold text-white mb-1 text-center max-w-sm" style={{fontSize: '1.1rem', lineHeight: '1.4rem'}}>
               Chegou a hora de conhecer o segredo<br />
-              das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
+              das <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
             <p className="text-gray-300 text-xs mb-4 text-center max-w-sm">
-              Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
+              Prepare-se: dia <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
           </motion.div>
           <motion.div 
@@ -418,10 +418,10 @@ export default function Home() {
           >
             <h1 className="font-bold text-white mb-4 max-w-3xl" style={{fontSize: '2.0rem', lineHeight: '2.1rem'}}>
               Chegou a hora de conhecer o segredo<br />
-              das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
+              das <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
             <p className="text-gray-300 text-sm mb-8 max-w-3xl">
-              Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
+              Prepare-se: dia <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-40 mb-auto"
@@ -605,7 +605,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-              Shopee, Mercado Livre, Amazon e TikTok Shop, <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 text-transparent bg-clip-text">domine todas de uma vez</span>
+              Shopee, Mercado Livre, Amazon e TikTok Shop, <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] text-transparent bg-clip-text">domine todas de uma vez</span>
             </h2>
             <p className="text-xl text-gray-400">
               Passo a passo testado e validado nas 4 maiores plataformas do e-commerce
@@ -1148,7 +1148,7 @@ export default function Home() {
               </Badge>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent leading-tight">
               Agora que viu tudo que vai receber, quanto acha que isso custaria?
             </h2>
           </motion.div>
@@ -1163,7 +1163,7 @@ export default function Home() {
             >
               <motion.h3 
                 variants={staggerItem}
-                className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-8"
+                className="text-2xl font-bold bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent mb-8"
               >
                 Relembrado tudo que você terá direito:
               </motion.h3>
@@ -1214,7 +1214,7 @@ export default function Home() {
                     <p className="text-gray-400 text-sm mb-4">de R$ 497 por apenas</p>
                     <div className="mb-6 flex items-baseline justify-center gap-2">
                       <span className="text-sm text-gray-300">12x</span>
-                      <span className="text-6xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                      <span className="text-6xl font-black bg-gradient-to-r from-[#c898ff] to-[#7c2eff] bg-clip-text text-transparent">
                         R$ 46,16
                       </span>
                     </div>
@@ -1283,7 +1283,7 @@ export default function Home() {
             >
               {/* Logo/Title */}
               <div className="mb-12">
-                <h2 className="font-heading text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent mb-0">
+                <h2 className="font-heading text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent mb-0">
                   FAQ
                 </h2>
                 <p className="text-gray-400 text-sm">Perguntas frequentes</p>
@@ -1291,7 +1291,7 @@ export default function Home() {
 
               {/* Subtitle */}
               <h3 className="text-2xl font-bold mb-2">
-                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent">
                   Ainda com dúvida?
                 </span>
               </h3>
