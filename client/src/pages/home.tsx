@@ -410,7 +410,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="font-bold text-white mb-4 max-w-3xl" style={{fontSize: '2.3rem', lineHeight: '2.5rem'}}>
+            <h1 className="font-bold text-white mb-4 max-w-3xl" style={{fontSize: '2.0rem', lineHeight: '2.1rem'}}>
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
