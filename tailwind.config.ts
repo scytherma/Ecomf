@@ -115,10 +115,13 @@ export default {
           "0%": { 
             boxShadow: "0 0 0px rgba(168, 85, 247, 0)",
           },
-          "30%": { 
+          "40%": { 
             boxShadow: "0 0 40px rgba(168, 85, 247, 1), 0 0 80px rgba(168, 85, 247, 0.6)",
           },
-          "70%": { 
+          "60%": { 
+            boxShadow: "0 0 40px rgba(168, 85, 247, 1), 0 0 80px rgba(168, 85, 247, 0.6)",
+          },
+          "90%": { 
             boxShadow: "0 0 0px rgba(168, 85, 247, 0)",
           },
           "100%": { 
@@ -158,7 +161,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-glow": "pulse-glow 60s ease-in-out infinite",
-        "pulse-light-emit": "pulse-light-emit 12s ease-out infinite",
+        "pulse-light-emit": "pulse-light-emit 25s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
         "gradient-shift": "gradient-shift 8s ease infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
