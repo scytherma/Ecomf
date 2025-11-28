@@ -461,7 +461,7 @@ export default function Home() {
         }}
       >
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col justify-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-16">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-start">
             {/* Left Content with Border */}
             <motion.div
