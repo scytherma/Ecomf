@@ -1253,14 +1253,6 @@ export default function Home() {
                       <Lock className="h-4 w-4 text-white" />
                       Garantia EcomFy · 7 dias ou seu dinheiro de volta
                     </p>
-                    <div className="flex justify-center items-center gap-4 text-gray-500 text-2xs md:text-xs">
-                      <span>Aceitamos:</span>
-                      <span>Cartão de Crédito</span>
-                      <span>•</span>
-                      <span>PIX</span>
-                      <span>•</span>
-                      <span>Boleto</span>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
