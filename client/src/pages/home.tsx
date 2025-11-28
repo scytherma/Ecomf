@@ -451,7 +451,7 @@ export default function Home() {
       {/* About EcomFy Section - Mobile */}
       <section 
         id="objetivo"
-        className="md:hidden py-20 relative overflow-hidden" 
+        className="md:hidden relative overflow-hidden" 
         style={{
           backgroundImage: `url(/images/objetivo-mobile.png)`,
           backgroundSize: 'cover',
