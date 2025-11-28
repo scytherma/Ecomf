@@ -111,18 +111,15 @@ export default {
             transform: "scale(1)",
           },
         },
-        "pulse-slow": {
-          "0%, 90%": { 
-            boxShadow: "0 0 20px rgba(168, 85, 247, 0.2)",
-            transform: "scale(1)",
+        "pulse-light-emit": {
+          "0%": { 
+            boxShadow: "0 0 0px rgba(168, 85, 247, 0.8)",
           },
-          "95%": { 
-            boxShadow: "0 0 40px rgba(168, 85, 247, 0.8)",
-            transform: "scale(1.02)",
+          "50%": { 
+            boxShadow: "0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(168, 85, 247, 0.3)",
           },
           "100%": { 
-            boxShadow: "0 0 20px rgba(168, 85, 247, 0.2)",
-            transform: "scale(1)",
+            boxShadow: "0 0 0px rgba(168, 85, 247, 0)",
           },
         },
         "float": {
@@ -158,7 +155,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-glow": "pulse-glow 60s ease-in-out infinite",
-        "pulse-slow": "pulse-slow 5s ease-in-out infinite",
+        "pulse-light-emit": "pulse-light-emit 5s ease-out infinite",
         "float": "float 3s ease-in-out infinite",
         "gradient-shift": "gradient-shift 8s ease infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",

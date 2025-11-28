@@ -383,7 +383,7 @@ export default function Home() {
             <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
               <Button 
                 size="default"
-                className="w-full px-6 py-3 text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-slow"
+                className="w-full px-6 py-3 text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 animate-pulse-light-emit"
                 data-testid="button-cta-hero"
               >
                 <Sparkles className="mr-3 h-5 w-5" />
@@ -421,7 +421,7 @@ export default function Home() {
               <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
                 <Button 
                   size="lg"
-                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 whitespace-nowrap animate-pulse-slow"
+                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 whitespace-nowrap animate-pulse-light-emit"
                   data-testid="button-cta-hero"
                 >
                   <Sparkles className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
