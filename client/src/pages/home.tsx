@@ -451,7 +451,7 @@ export default function Home() {
       {/* About EcomFy Section - Mobile */}
       <section 
         id="objetivo"
-        className="md:hidden relative overflow-hidden" 
+        className="md:hidden py-20 relative overflow-hidden" 
         style={{
           backgroundImage: `url(/images/objetivo-mobile.png)`,
           backgroundSize: 'cover',
@@ -462,7 +462,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-8 items-center justify-start">
+          <div className="flex flex-col lg:flex-row gap-8 items-center justify-start h-full">
             {/* Left Content with Border */}
             <motion.div
               {...fadeInUp}
