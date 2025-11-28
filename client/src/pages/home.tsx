@@ -1081,7 +1081,7 @@ export default function Home() {
             <p className="text-xl text-gray-400 mb-8">
               Mais de R$ 350 Mil em faturamento gerado
             </p>
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] px-8 py-4 rounded-full">
               <TrendingUp className="w-6 h-6 text-white" />
               <span className="text-white text-2xl font-bold">R$ 350K+ em Vendas</span>
             </div>
