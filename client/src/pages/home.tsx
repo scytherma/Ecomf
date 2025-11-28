@@ -1125,7 +1125,7 @@ export default function Home() {
                       <img 
                         src={ecomfyLogo} 
                         alt="Logo EcomFy" 
-                        className="h-20 object-contain"
+                        className="h-12 object-contain"
                       />
                     </div>
                     <p className="text-gray-400 text-sm mb-4">de R$ 497 por apenas</p>
