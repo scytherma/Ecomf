@@ -1079,7 +1079,7 @@ export default function Home() {
               Resultados Reais dos Nossos Alunos
             </h2>
             <p className="text-xl text-gray-400 mb-8">
-              Mais de R$ 50 milhões em faturamento gerado
+              Mais de R$ 350 Mil em faturamento gerado
             </p>
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full">
               <TrendingUp className="w-6 h-6 text-white" />
