@@ -1126,9 +1126,12 @@ export default function Home() {
                       <span className="text-gray-500 line-through text-3xl">R$ 1.997,00</span>
                     </div>
                     <div className="mb-2">
-                      <span className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        12x de R$ 46,16
-                      </span>
+                      <span className="text-sm text-gray-300">12x de</span>
+                      <div>
+                        <span className="text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                          R$ 46,16
+                        </span>
+                      </div>
                     </div>
                     <p className="text-gray-300 text-lg">
                       ou <strong className="text-white">R$ 397</strong> à vista
