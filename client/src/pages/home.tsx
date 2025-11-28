@@ -1270,7 +1270,7 @@ export default function Home() {
       </section>
 
       {/* Divider */}
-      <div className="h-24" style={{backgroundColor: 'rgb(5, 4, 8)'}} aria-hidden="true" />
+      <div className="h-8" style={{backgroundColor: 'rgb(5, 4, 8)'}} aria-hidden="true" />
 
       {/* FAQ */}
       <section id="faq" className="py-24" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
