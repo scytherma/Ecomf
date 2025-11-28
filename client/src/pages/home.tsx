@@ -1121,6 +1121,13 @@ export default function Home() {
               <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
                 <CardContent className="p-12">
                   <div className="text-center mb-8">
+                    <div className="mb-6 flex justify-center">
+                      <img 
+                        src={ecomfyLogo} 
+                        alt="Logo EcomFy" 
+                        className="h-20 object-contain"
+                      />
+                    </div>
                     <p className="text-gray-400 text-sm mb-4">de R$ 497 por apenas</p>
                     <div className="mb-6 flex items-baseline justify-center gap-2">
                       <span className="text-sm text-gray-300">12x</span>
