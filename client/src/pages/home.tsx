@@ -1054,7 +1054,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" aria-hidden="true" />
 
       {/* Pricing Section */}
-      <section className="py-12 relative overflow-hidden" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
+      <section className="py-12 relative overflow-visible" style={{backgroundColor: 'rgb(5, 4, 8)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             {...fadeInUp}
@@ -1117,6 +1117,7 @@ export default function Home() {
             <motion.div
               {...fadeInUp}
               transition={{ delay: 0.2 }}
+              className="relative z-20"
             >
               <Card className="bg-gradient-to-br from-gray-900 to-gray-800 backdrop-blur-md border-2 border-purple-500/50 shadow-2xl shadow-purple-500/30">
                 <CardContent className="p-12">
