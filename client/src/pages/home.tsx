@@ -468,17 +468,17 @@ export default function Home() {
               {...fadeInUp}
               className="w-full lg:w-2/3 border-l-4 border-primary pl-6"
             >
-              <div className="text-xs font-bold text-primary mb-2 tracking-wider">
+              <div className="text-sm font-bold text-primary mb-4 tracking-wider">
                 OBJETIVO
               </div>
 
-              <h2 className="text-2xl md:text-5xl font-bold mb-4 leading-tight">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                 <span className="text-white">Qual é o</span> <span className="text-primary">objetivo da EcomFy</span>
                 <br />
                 <span className="text-white">e o</span> <span className="text-primary">que você vai aprender?</span>
               </h2>
 
-              <div className="text-gray-300 text-xs space-y-3">
+              <div className="text-gray-300 text-sm space-y-5">
                 <p>
                   Um dos maiores desafios de quem quer começar ou evoluir no e-commerce de verdade é saber exatamente onde, como e o que vender sem perder tempo e dinheiro. Foi pensando nisso que <span className="text-primary font-bold">Diogo e Oliveira</span>, dois mentores que já faturaram <span className="text-primary font-bold">múltiplos 7 dígitos</span> no Mercado Livre, Shopee, TikTok Shop e Amazon, criaram a <span className="text-primary font-bold">EcomFy</span>.
                 </p>
