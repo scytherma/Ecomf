@@ -379,7 +379,13 @@ export default function Home() {
               Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
           </motion.div>
-          <div className="flex flex-col gap-3 w-full max-w-sm mb-8">
+          <motion.div 
+            className="flex flex-col gap-3 w-full max-w-sm mb-8"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.5 }}
+          >
             <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
               <Button 
                 size="default"
@@ -390,7 +396,7 @@ export default function Home() {
                 Entrar para EcomFy
               </Button>
             </a>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -417,30 +423,45 @@ export default function Home() {
             <p className="text-gray-300 text-sm mb-8 max-w-3xl">
               Prepare-se: dia <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
             </p>
-            <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-40 mb-auto">
-              <a href="https://pay.cakto.com.br/trrf6yf" className="w-full sm:w-auto">
-                <Button 
-                  size="lg"
-                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 whitespace-nowrap"
-                  data-testid="button-cta-hero"
-                >
-                  <Sparkles className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
-                  Entrar para EcomFy
-                </Button>
-              </a>
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-40 mb-auto"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-full sm:w-auto"
+              >
+                <a href="https://pay.cakto.com.br/trrf6yf" className="w-full">
+                  <Button 
+                    size="lg"
+                    className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 whitespace-nowrap"
+                    data-testid="button-cta-hero"
+                  >
+                    <Sparkles className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
+                    Entrar para EcomFy
+                  </Button>
+                </a>
+              </motion.div>
               
-              <a href="https://wa.me/5511948889811?text=Oi%2C%20vim%20do%20site!%20Estou%20quase%20decidindo%20entrar%20na%20EcomFy%2C%20mas%20queria%20tirar%20uma%20d%C3%BAvida%20r%C3%A1pida%20antes%20de%20garantir%20minha%20vaga" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
-                  data-testid="button-whatsapp-hero"
-                >
-                  <SiWhatsapp className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
-                  Tirar dúvidas
-                </Button>
-              </a>
-            </div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-full sm:w-auto"
+              >
+                <a href="https://wa.me/5511948889811?text=Oi%2C%20vim%20do%20site!%20Estou%20quase%20decidindo%20entrar%20na%20EcomFy%2C%20mas%20queria%20tirar%20uma%20d%C3%BAvida%20r%C3%A1pida%20antes%20de%20garantir%20minha%20vaga" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button 
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 whitespace-nowrap"
+                    data-testid="button-whatsapp-hero"
+                  >
+                    <SiWhatsapp className="mr-3 h-6 w-6 sm:h-7 sm:w-7" />
+                    Tirar dúvidas
+                  </Button>
+                </a>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
