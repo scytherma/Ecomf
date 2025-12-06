@@ -1098,7 +1098,7 @@ export default function Home() {
               </motion.h3>
               <div className="space-y-4">
                 {[
-                  'Plataforma com +150 aulas e 50 módulos',
+                  'Plataforma com mais de 100 aulas',
                   'Suporte individual VIP',
                   'Acesso aos Grupos VIP do (WhatsApp)',
                   'Lista de Produtos Campeões',
