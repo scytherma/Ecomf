@@ -75,7 +75,7 @@ import moduleNewImage5 from "@assets/module_new_5.png";
 import moduleNewImage6 from "@assets/module_new_6.png";
 import moduleNewImage7 from "@assets/module_new_7.png";
 import moduleNewImage8 from "@assets/module_new_8.png";
-import moduleNewImage9 from "@assets/module_new_9.png";
+import multiCanal07 from "@assets/MULTICANAL07.png";
 import moduleNewImage10 from "@assets/module_new_10.png";
 import moduleNewImage11 from "@assets/module_new_11.png";
 
