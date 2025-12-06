@@ -67,12 +67,17 @@ import mercadoLivreLogoColor from "@assets/420-4206772_mercado-livre-logo-mercad
 import ttkshpLogo from "@assets/ttkshp_1763877896397.png";
 
 // Module images
-import moduleImage1 from "@assets/generated_images/mercado_livre_pro_module.png";
-import moduleImage2 from "@assets/generated_images/shopee_expert_module.png";
-import moduleImage3 from "@assets/generated_images/tiktok_shop_master_module.png";
-import moduleImage4 from "@assets/generated_images/amazon_advanced_module.png";
-import moduleImage5 from "@assets/generated_images/content_and_traffic_module.png";
-import moduleImage6 from "@assets/generated_images/scaling_and_automation_module.png";
+import moduleNewImage1 from "@assets/module_new_1.png";
+import moduleNewImage2 from "@assets/module_new_2.png";
+import moduleNewImage3 from "@assets/module_new_3.png";
+import moduleNewImage4 from "@assets/module_new_4.png";
+import moduleNewImage5 from "@assets/module_new_5.png";
+import moduleNewImage6 from "@assets/module_new_6.png";
+import moduleNewImage7 from "@assets/module_new_7.png";
+import moduleNewImage8 from "@assets/module_new_8.png";
+import moduleNewImage9 from "@assets/module_new_9.png";
+import moduleNewImage10 from "@assets/module_new_10.png";
+import moduleNewImage11 from "@assets/module_new_11.png";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -260,28 +265,48 @@ export default function Home() {
 
   const carouselModules = [
     { 
-      image: moduleImage1,
-      title: "Mercado Livre Pro"
+      image: moduleNewImage1,
+      title: "Módulo 1"
     },
     { 
-      image: moduleImage2,
-      title: "Shopee Expert"
+      image: moduleNewImage2,
+      title: "Módulo 2"
     },
     { 
-      image: moduleImage3,
-      title: "TikTok Shop Master"
+      image: moduleNewImage3,
+      title: "Módulo 3"
     },
     { 
-      image: moduleImage4,
-      title: "Amazon Advanced"
+      image: moduleNewImage4,
+      title: "Módulo 4"
     },
     { 
-      image: moduleImage5,
-      title: "Conteúdo & Tráfego Multicanal"
+      image: moduleNewImage5,
+      title: "Módulo 5"
     },
     { 
-      image: moduleImage6,
-      title: "Escala & Automação"
+      image: moduleNewImage6,
+      title: "Módulo 6"
+    },
+    { 
+      image: moduleNewImage7,
+      title: "Módulo 7"
+    },
+    { 
+      image: moduleNewImage8,
+      title: "Módulo 8"
+    },
+    { 
+      image: moduleNewImage9,
+      title: "Módulo 9"
+    },
+    { 
+      image: moduleNewImage10,
+      title: "Módulo 10"
+    },
+    { 
+      image: moduleNewImage11,
+      title: "Módulo 11"
     },
   ];
 
