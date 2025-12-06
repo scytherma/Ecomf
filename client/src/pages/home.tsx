@@ -938,12 +938,12 @@ export default function Home() {
               },
               {
                 title: "Lista de Produtos Campeões",
-                description: "Acesso a 100+ produtos de alta demanda à bolsa concorrência prontos para vender.",
+                description: "Acesso a produtos de alta demanda e boa concorrência prontos para vender.",
                 image: bonusProductsChampions
               },
               {
                 title: "Lista de Fornecedores",
-                description: "Mais de 100 fornecedores, importadores e distribuidores nacionais e internacionais.",
+                description: "Mais de 200 fornecedores, importadores e distribuidores nacionais e internacionais.",
                 image: bonusSuppliers
               },
               {
@@ -1100,7 +1100,7 @@ export default function Home() {
                 {[
                   'Plataforma com +150 aulas e 50 módulos',
                   'Suporte individual VIP',
-                  'Acesso aos Grupos VIP (WhatsApp e Telegram)',
+                  'Acesso aos Grupos VIP do (WhatsApp)',
                   'Lista de Produtos Campeões',
                   'Lista de Fornecedores (Nacionais e Internacionais)',
                   'Lista de insumos e embalagens para utilizar em sua operação',
