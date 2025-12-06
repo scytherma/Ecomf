@@ -1140,16 +1140,18 @@ export default function Home() {
                         className="h-12 object-contain"
                       />
                     </div>
-                    <p className="text-gray-400 text-sm mb-4">de R$ 497 por apenas</p>
-                    <div className="mb-6 flex items-baseline justify-center gap-2">
-                      <span className="text-sm md:text-sm text-gray-300">12x</span>
-                      <span className="text-4xl md:text-6xl font-black bg-gradient-to-r from-[#c898ff] to-[#7c2eff] bg-clip-text text-transparent">
-                        R$ 46,16
-                      </span>
-                    </div>
-                    <p className="text-gray-400 text-sm">
-                      ou R$ 397 à vista
-                    </p>
+<p className="text-xl font-bold text-gray-400 line-through mb-1">
+  De R$ 2.997,00
+</p>
+<div className="mb-6 flex items-baseline justify-center gap-2">
+  <span className="text-sm md:text-sm text-gray-300">12x</span>
+  <span className="text-4xl md:text-6xl font-black bg-gradient-to-r from-[#c898ff] to-[#7c2eff] bg-clip-text text-transparent">
+    R$ 46,16
+  </span>
+</div>
+<p className="text-gray-400 text-sm">
+  ou R$ 397 à vista
+</p>
                   </div>
 
                   <div className="space-y-3 flex flex-col items-center">
