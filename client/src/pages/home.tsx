@@ -368,7 +368,7 @@ export default function Home() {
     },
     {
       question: "Como funciona o acesso ao curso?",
-      answer: "O acesso é vitalício! Você poderá assistir as aulas quantas vezes quiser, no seu ritmo, de qualquer dispositivo."
+      answer: "O acesso é Anual! Você poderá assistir as aulas quantas vezes quiser, no seu ritmo, de qualquer dispositivo."
     },
     {
       question: "Terei suporte dos mentores?",
