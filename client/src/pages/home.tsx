@@ -297,7 +297,7 @@ export default function Home() {
       title: "Módulo 8"
     },
     { 
-      image: moduleNewImage9,
+      image: multiCanal07,
       title: "Módulo 9"
     },
     { 
