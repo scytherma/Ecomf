@@ -751,7 +751,6 @@ export default function Home() {
                       className="h-full"
                     >
                       <Card className="group relative w-full aspect-[2/3] rounded-lg border-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-purple-500/30 flex flex-col p-0">
->
                         {/* Full Image Only */}
                         {module.image && (
                           <div className="relative w-full h-full overflow-hidden">
