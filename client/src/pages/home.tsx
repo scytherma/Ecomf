@@ -1155,7 +1155,7 @@ export default function Home() {
                   </div>
 
                   <div className="space-y-3 flex flex-col items-center">
-                    <a href="https://pay.cakto.com.br/trrf6yf" className="block w-full">
+                    <a href="https://pay.cakto.com.br/wne59qp" className="block w-full">
                       <Button 
                         size="lg"
                         className="font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow w-full"
