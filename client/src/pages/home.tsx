@@ -400,9 +400,6 @@ export default function Home() {
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
-            <p className="text-gray-300 text-xs mb-4 text-center max-w-sm">
-              Prepare-se: dia <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
-            </p>
           </motion.div>
           <motion.div 
             className="flex flex-col gap-3 w-full max-w-sm mb-8"
@@ -445,9 +442,6 @@ export default function Home() {
               Chegou a hora de conhecer o segredo<br />
               das <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">empresas que crescem diariamente e lucram muito nas 4 gigantes do e-commerce</span> brasileiro.
             </h1>
-            <p className="text-gray-300 text-sm mb-8 max-w-3xl">
-              Prepare-se: dia <span className="bg-gradient-to-r from-[#c898ff] via-[#7c2eff] to-[#870aff] bg-clip-text text-transparent font-bold">12/12</span> a EcomFy abre as portas e revela tudo
-            </p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-1 sm:gap-2 max-w-xl mt-40 mb-auto"
               initial={{ opacity: 0, scale: 0.9 }}
