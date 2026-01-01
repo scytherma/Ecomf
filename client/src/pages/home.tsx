@@ -411,7 +411,7 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
           >
-            <a href="https://pay.cakto.com.br/gamor9o" className="w-full">
+            <a href="https://pay.cakto.com.br/mvyritr" className="w-full">
               <Button 
                 size="default"
                 className="w-full px-6 py-3 text-base font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300"
@@ -458,7 +458,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 className="w-full sm:w-auto"
               >
-                <a href="https://pay.cakto.com.br/gamor9o" className="w-full">
+                <a href="https://pay.cakto.com.br/mvyritr" className="w-full">
                   <Button 
                     size="lg"
                     className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-6 text-base sm:text-lg font-bold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-purple-500/60 transition-all duration-300 whitespace-nowrap"
@@ -1155,7 +1155,7 @@ export default function Home() {
                   </div>
 
                   <div className="space-y-3 flex flex-col items-center">
-                    <a href="https://pay.cakto.com.br/gamor9o" className="block w-full">
+                    <a href="https://pay.cakto.com.br/mvyritr" className="block w-full">
                       <Button 
                         size="lg"
                         className="font-bold bg-primary hover:bg-primary/90 shadow-2xl hover:shadow-purple-500/50 animate-pulse-glow w-full"
