@@ -922,7 +922,7 @@ export default function Home() {
             {[
               {
                 title: "Suporte Individual VIP",
-                description: "Acesso direto a um e a minha equipe e através de um número exclusivo WhatsApp com devoluções e é qual em cada etapa do seu jornada no Eco Drop sempre que precisar.",
+                description: "Acesso direto a um e a minha equipe e através de um número exclusivo WhatsApp com devoluções e é qual em cada etapa do seu jornada no EcomFy sempre que precisar.",
                 image: bonusSupportVip
               },
               {
